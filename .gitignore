@@ -1,0 +1,4 @@
+src/.observablehq
+src/components
+node_modules
+dist
