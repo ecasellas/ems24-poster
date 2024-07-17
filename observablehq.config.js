@@ -23,7 +23,7 @@ export default {
         {name: "Study site", path: "/study_zone"},
         {name: "Data", path: "/data"},
         {name: "Methodologies", path: "/methodologies"},
-        {name: "Results", path: "/example-dashboard_2"}
+        {name: "Results", path: "/results"}
       ]
     }
   ],
