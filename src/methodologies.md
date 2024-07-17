@@ -5,7 +5,7 @@ title: Methodologies
 # Methodologies
 
 Post-processing ensemble forecasts is usually approached using two main techniques: Bayesian Model Averaging
-(BMA; Raftery et al., 2005) and non-homogeneous regression (EMOS; Gneiting et al., 2005), both of which
+(BMA; [Raftery et al., 2005](#references)) and non-homogeneous regression (EMOS; [Gneiting et al., 2005](#references)), both of which
 calibrate parametric forecast distributions. Therefore, a distribution has to be chosen in order to adjust
 and calibrate its parameters.
 
@@ -24,7 +24,7 @@ where:
 
 For this work, two different strategies were tested to post-process temperature ensemble forecasts. One is
 EMOS using the implementation in IMPROVER, and the other is Distributional Regression Neural Networks proposed
-by Rasp and Lerch (2018). 
+by [Rasp and Lerch (2018)](#references). 
 
 ## Ensemble Model Output Statistics
 
@@ -121,13 +121,13 @@ is the same as in [Rasp and Lerch (2018)](#references), CRPS.
 The training of the DRN was done in the Kaggle environment. The Adam optimizer was used, together with an early
 stopping configuration to avoid overfitting and a reduction in the learning rate when the loss reached a plateau.
 
-#### DRN approaches
+### DRN approaches
 
 As aforementioned, the use of the Poor Man's Ensemble (PME) involves different models and is not an ensemble built
 from perturbations of a single model. Therefore, a DRN approach may benefit from using ensemble members rather than
 just their mean and standard deviation. Additionally, as presented in the Data section, not all lead times have the
 same number of models, which poses a challenge for defining a single DRN for the entire postprocessing of PME.
-Therefore, three approaches were proposed:
+Therefore, two approaches were proposed:
 
 - *DRN-Mean*: The mean and standard deviation of the ensemble are used as input features. This approach has the
 advantage of being independent of how the mean and standard deviation are obtained, so a single DRN can be trained.
@@ -135,10 +135,6 @@ advantage of being independent of how the mean and standard deviation are obtain
 - *DRN-Members*: The ensemble members are used as input features. This approach requires the training of two DRNs,
 one for the 0-48 lead times and another for the 49-72 lead times, since a different number of models are available
 for each set of lead times.
-
-- *DRN-Members-Ext*: The ensemble members are used as input features. This approach requires a single DRN training.
-The three models that only reach lead time 48 are extended to lead time 72 by considering the persistence of the
-24-48 hour values.
 
 ---
 
@@ -150,8 +146,13 @@ Abadi, M., Barham, P., Chen, J., Chen, Z., Davis, A., Dean, J., ... & Zheng, X. 
 
 Chollet, F. (2021). Deep learning with Python. Simon and Schuster.
 
-Roberts, N., Ayliffe, B., Evans, G., Moseley, S., Rust, F., Sandford, C., ... & Worsfold, M. (2023). IMPROVER: the new probabilistic postprocessing system at the Met Office. Bulletin of the American Meteorological Society, 104(3), E680-E697.
+Gneiting, T., Raftery, A. E., Westveld, A. H., & Goldman, T. (2005). Calibrated probabilistic forecasting using ensemble model output statistics and minimum CRPS estimation. Monthly Weather Review, 133(5), 1098-1118.
+
+Raftery, A. E., Gneiting, T., Balabdaoui, F., & Polakowski, M. (2005). Using Bayesian model averaging to calibrate forecast ensembles. Monthly weather review, 133(5), 1155-1174.
 
 Rasp, S., & Lerch, S. (2018). Neural networks for postprocessing ensemble weather forecasts. Monthly Weather Review, 146(11), 3885-3900.
+
+Roberts, N., Ayliffe, B., Evans, G., Moseley, S., Rust, F., Sandford, C., ... & Worsfold, M. (2023). IMPROVER: the new probabilistic postprocessing system at the Met Office. Bulletin of the American Meteorological Society, 104(3), E680-E697.
+
 
 </span>
