@@ -18,7 +18,7 @@ const launches = FileAttachment("data/launches.csv").csv({typed: true});
 const ranks = FileAttachment("data/rankhist_all.json").json();
 const ranksLt = FileAttachment("data/rankhist_lead_times.json").json();
 const crps = FileAttachment("data/ems_crps_results.json").json();
-const comarques = FileAttachment("data/prova.json.geojson").json();
+const comarques = FileAttachment("data/catalunya_fronteres.json.geojson").json();
 const crpsMap = FileAttachment("data/crps_map.json").json();
 ```
 
