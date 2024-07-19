@@ -1,5 +1,6 @@
 ---
 title: Introduction
+toc: true
 ---
 
 # Introduction
