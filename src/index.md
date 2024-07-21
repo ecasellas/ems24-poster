@@ -42,6 +42,32 @@ toc: false
   }
 }
 
+
+  .responsive-container {
+    position: relative;
+    width: 100%;
+    height: 70%;
+    margin-bottom: 10px;
+  }
+  .responsive-plot {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .link-container {
+    margin-top: 10px;
+  }
+  .link-container a {
+    display: inline-block;
+    padding: 5px;
+    background: white;
+    border: 1px solid #ccc;
+    text-decoration: none;
+    color: black;
+  }
+
 </style>
 
 <div class="hero">
@@ -54,7 +80,7 @@ toc: false
   </h2>
 </div>
 
-<div class="grid grid-cols-4" style="grid-auto-rows: 304px;">
+<div class="grid grid-cols-3">
   <div class="card">
     <h1>Introduction</h1>
     <a href="introduction"><span>Go to Introduction &#8599;</span></a>
@@ -62,39 +88,72 @@ toc: false
 
   <div class="card">
     <h1>Study zone</h1>
-    <a href="introduction"><span>Go to Study zone &#8599;</span></a>
+  <div class="responsive-container">
+    <div class="responsive-plot">
+      ${resize((width, height) => {
+        return plotMapCRPS({width, height});
+      })}
+    </div>
+  </div>
+    <a href="study_zone"><span>Go to Study Zone &#8599;</span></a>
   </div>
 
   <div class="card">
     <h1>Data</h1>
-    <a href="introduction"><span>Go to Data &#8599;</span></a>
-  </div>
 
-  <div class="card">
-    <h1>Methodologies</h1>
-    <a href="in"><span>Go to Methodologies &#8599;</span></a>
+<span style="font-size: 30px; font-weight: 900;">27</span> months of air temperature hourly data
+
+<span style="font-size: 30px; font-weight: 900">10</span> member multi-model ensemble
+
+<span style="font-size: 30px; font-weight: 900">186</span> automatic weather stations as ground truth
+
+  <a href="data"><span>Go to Data &#8599;</span></a>
   </div>
 
 </div>
 
-<div class="grid grid-cols-2" style="grid-auto-rows: 504px;">
+
+<div class="grid grid-cols-3">
+
   <div class="card">
-    <h1>Results</h1>
-    <a href="introduction"><span>Go to Results &#8599;</span></a>
+    <h1>Methodologies</h1>
+    <div class="card">
+      <div style="display: flex; padding: 0px;">
+       <img src="data/improver_logo_small.webp" style="width: 50%; height: 50%; margin-right: 15px;"></img>
+       <p>Ensemble Model Output Statistics, also known as EMOS, implemented using IMPROVER developed by the MetOffice.</p>
+      </div>
+    </div>
+    <div class="card">
+      <div style="display: flex; padding: 0px;">
+       <img src="data/improver_logo_small.webp" style="width: 50%; height: 50%; margin-right: 15px;"></img>
+       <p>Ensemble Model Output Statistics, also known as EMOS, implemented using IMPROVER developed by the MetOffice.</p>
+      </div>
+    </div>   
+  <a href="methodologies"><span>Go to Methodologies &#8599;</span></a>  
+  </div>
+  
+
+  <div class="card grid-rowspan-2 grid-colspan-2">
+  
+  <h1>Results</h1>
+    <div class="card">
+    ${resize((width) => plotCRPS(crps, width))
+    }
+    </div>
+    <div class="card">
+    ${resize((width) => rankHistAll(ranks, {width}))}
+    <a href="results"><span>Go to Results &#8599;</span></a>
+    </div>
+  
   </div>
 
   <div class="card">
     <h1>Conclusions</h1>
-    <a href="introduction"><span>Go to Conclusions &#8599;</span></a>
+    <a href="conclusions"><span>Go to Conclusions &#8599;</span></a>
   </div>
+
 </div>
 
-<div class="grid grid-cols-1" style="grid-auto-rows: 204px;">
-  <div class="card">
-    <h1>Take home messages</h1>
-    <a href="introduction"><span>Go to Take home messages &#8599;</span></a>
-  </div>
-</div>
 
 ```js
 const aapl = FileAttachment("aapl.csv").csv({typed: true});
@@ -102,6 +161,97 @@ const penguins = FileAttachment("penguins.csv").csv({typed: true});
 ```
 
 ---
+
+```js
+const catalunya = FileAttachment("data/catalunya_fronteres.json.geojson").json()
+const liniaCosta = FileAttachment("data/ne_10m_coastline.json").json()
+const stations = FileAttachment("data/station_metadata.json").json()
+```
+
+```js
+const circle = d3.geoCircle().center([1.80, 41.6]).radius(10.45).precision(1)()
+```
+
+```js
+function plotMapCRPS({width, height} = {}) {
+
+return Plot.plot({
+  projection: {
+    type: "mercator",
+    rotate: [-9, -34],
+    domain: circle
+  },
+  width: width,
+  height: height,
+  marks: [
+    Plot.geo(catalunya, { stroke: "#ddd", fill: "#66c2a5" }),
+    Plot.geo(liniaCosta, { stroke: "#ddd"}),
+    ]
+})
+}
+```
+
+```js
+const launches = FileAttachment("data/launches.csv").csv({typed: true});
+const ranks = FileAttachment("data/rankhist_all.json").json();
+const ranksLt = FileAttachment("data/rankhist_lead_times.json").json();
+const crps = FileAttachment("data/ems_crps_results.json").json();
+const comarques = FileAttachment("data/catalunya_fronteres.json.geojson").json();
+const crpsMap = FileAttachment("data/crps_map.json").json();
+```
+
+
+```js
+function plotCRPS(data, {width} = {}) {
+
+
+return Plot.plot({
+    title: "",
+    width,
+    height: 300,
+    color: {legend: true, domain: ["PME", "IMPROVER", "DRN-Mean", "DRN-Members"]},
+    marks: [
+      Plot.line(data, {x: "lead_time", y: "value", stroke: "variable", tip: true}),
+      Plot.gridX(),
+      Plot.gridY()
+    ],
+    y: {label: "CRPS"},
+    x: {label: "Lead time (hours)"},
+  });
+}
+```
+
+```js
+function rankHistAll(data, {width} = {}) {
+
+const ruleYValue = [1 / 11];
+
+const setData = data.filter((d) => d.lead_time == "0-48 h")
+
+const plotData = setData.flatMap(({ forecast, rankhist }) =>
+  rankhist.map((value, index) => ({
+    forecast,
+    bin: index + 1,
+    frequency: value
+  }))
+);
+
+return Plot.plot({
+    width,
+    height: 300,
+    marks: [
+      Plot.barY(plotData, {x: "bin", y: "frequency", fill: "forecast", fx:"forecast"}),
+      Plot.ruleY(ruleYValue, {stroke: "grey"}),
+      Plot.axisFx({anchor: "top"})
+    ],
+    color: {legend: true, domain: ["PME", "IMPROVER", "DRN-Mean", "DRN-Members"]},
+    x: {label: "Rank of observation"},
+    y: {label: "Frequency"},
+    fx: {label: null, anchor: "bottom", domain: ["PME", "IMPROVER", "DRN-Mean", "DRN-Members"]},
+  });
+}
+```
+
 
 ## Next steps
 
