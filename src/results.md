@@ -96,7 +96,7 @@ const selectedMap = Generators.input(selMap);
 
 
 ```js
-const circle = d3.geoCircle().center([1.80, 41.7]).radius(1.2).precision(1)()
+const circle = d3.geoCircle().center([1.80, 41.8]).radius(1.2).precision(1)()
 ```
 
 ```js
@@ -118,11 +118,14 @@ return Plot.plot({
     title: "",
     width,
     height: 400,
-    projection: {type: "mercator", domain: circle},
+    projection: {type: "mercator", rotate: [-9, -34], domain: circle},
     color: {range: colorRange, domain: domain, legend: true, label: "CRPS", nice: false},
     marks: [
       Plot.geo(comarques, {stroke: "#ddd", border: "none", background: "none"}),
-      Plot.dot(selCrpsData, {x: "longitude", y: "latitude", fill: "value", stroke: "white", tip: true, strokeWidth: 0.2})
+      Plot.dot(selCrpsData, {x: "longitude", y: "latitude", fill: "value", stroke: "white", channels: {
+                          id: "station_id",
+                          longitude: (d) => `${d.longitude}\u00b0`,
+                          latitude: (d) => `${d.latitude}\u00b0`}, tip: true, strokeWidth: 0.2})
     ],
   });
 }
@@ -269,10 +272,6 @@ return Plot.plot({
     fx: {label: null, anchor: "bottom", domain: ["PME", "IMPROVER", "DRN-Mean", "DRN-Members"]},
   });
 }
-
-
-
-
 ```
 
 ```js
