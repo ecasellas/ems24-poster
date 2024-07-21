@@ -1,5 +1,6 @@
 ---
 title: Data
+toc: true
 ---
 
 # Data
@@ -19,7 +20,7 @@ with half situated between 500 and 2000 m above sea level (m a.s.l.), and the ot
 considered high mountainous areas. Data is collected every 30 minutes, but here, only hourly 2-m air temperature data was considered.
 
 ```js
-const limits = FileAttachment("data/ne_10m_coastline.json").json()
+const limits = FileAttachment("data/catalunya_fronteres.json.geojson").json()
 const stations = FileAttachment("data/station_metadata.json").json()
 ```
 
