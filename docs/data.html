@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>Data | EMS24</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&amp;display=swap" crossorigin>
+<link rel="preload" as="style" href="./_observablehq/theme-air,near-midnight.css">
+<link rel="preload" as="style" href="./_observablehq/stdlib/inputs.css">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&amp;display=swap" crossorigin>
+<link rel="stylesheet" type="text/css" href="./_observablehq/theme-air,near-midnight.css">
+<link rel="stylesheet" type="text/css" href="./_observablehq/stdlib/inputs.css">
+<link rel="modulepreload" href="./_observablehq/client.js">
+<link rel="modulepreload" href="./_observablehq/runtime.js">
+<link rel="modulepreload" href="./_observablehq/stdlib.js">
+<link rel="modulepreload" href="./_npm/d3@7.9.0/_esm.js">
+<link rel="modulepreload" href="./_observablehq/stdlib/inputs.js">
+<link rel="modulepreload" href="./_npm/@observablehq/plot@0.6.15/_esm.js">
+<link rel="modulepreload" href="./_npm/htl@0.3.1/_esm.js">
+<link rel="modulepreload" href="./_npm/isoformat@0.2.1/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-array@3.2.4/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-axis@3.0.0/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-brush@3.0.0/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-chord@3.0.1/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-color@3.1.0/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-contour@4.0.2/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-delaunay@6.0.4/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-dispatch@3.0.1/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-drag@3.0.0/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-dsv@3.0.1/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-ease@3.0.1/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-fetch@3.0.1/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-force@3.0.0/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-format@3.1.0/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-geo@3.1.1/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-hierarchy@3.1.2/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-interpolate@3.0.1/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-path@3.1.0/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-polygon@3.0.1/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-quadtree@3.0.1/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-random@3.0.1/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-scale@4.0.2/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-scale-chromatic@3.1.0/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-selection@3.0.0/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-shape@3.2.0/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-time@3.1.0/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-time-format@4.1.0/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-timer@3.0.1/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-transition@3.0.1/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-zoom@3.0.0/_esm.js">
+<link rel="modulepreload" href="./_npm/interval-tree-1d@1.0.4/_esm.js">
+<link rel="modulepreload" href="./_npm/internmap@2.0.3/_esm.js">
+<link rel="modulepreload" href="./_npm/delaunator@5.0.1/_esm.js">
+<link rel="modulepreload" href="./_npm/binary-search-bounds@2.0.5/_esm.js">
+<link rel="modulepreload" href="./_npm/robust-predicates@3.0.2/_esm.js">
+<link rel="icon" href="./_file/observable.1af93621.png" type="image/png" sizes="32x32">
+<script type="module">
+
+import {define} from "./_observablehq/client.js";
+import {registerFile} from "./_observablehq/stdlib.js";
+
+registerFile("./data/catalunya_fronteres.json.geojson", {"name":"./data/catalunya_fronteres.json.geojson","mimeType":"application/geo+json","path":"./_file/data/catalunya_fronteres.json.4da36609.geojson","lastModified":1721308795398});
+registerFile("./data/pme_models.json", {"name":"./data/pme_models.json","mimeType":"application/json","path":"./_file/data/pme_models.4ad75758.json","lastModified":1720425704148});
+registerFile("./data/splits.json", {"name":"./data/splits.json","mimeType":"application/json","path":"./_file/data/splits.b76ee40d.json","lastModified":1720438125029});
+registerFile("./data/station_metadata.json", {"name":"./data/station_metadata.json","mimeType":"application/json","path":"./_file/data/station_metadata.8207c0f0.json","lastModified":1721122309625});
+
+define({id: "d0f0ba8f", inputs: ["FileAttachment"], outputs: ["limits","stations"], body: (FileAttachment) => {
+const limits = FileAttachment("./data/catalunya_fronteres.json.geojson").json()
+const stations = FileAttachment("./data/station_metadata.json").json()
+return {limits,stations};
+}});
+
+define({id: "41d16915", inputs: ["d3"], outputs: ["circle"], body: (d3) => {
+const circle = d3.geoCircle().center([1.80, 41.6]).radius(1.45).precision(1)()
+return {circle};
+}});
+
+define({id: "669df3fe", inputs: ["Plot","circle","limits","stations","display"], body: async (Plot,circle,limits,stations,display) => {
+display(await(
+Plot.plot({
+  projection: {
+    type: "mercator",
+    rotate: [-9, -34],
+    domain: circle
+  },
+  width: 650,
+  height: 400,
+  marks: [
+    Plot.geo(limits, { stroke: "#ddd" }),
+    Plot.dot(stations, {x: "longitude", y: "latitude", fill: "#efb118", stroke: "white", strokeWidth: 0.8,
+                        channels: {
+                          id: "station_id",
+                          altitude: (d) => `${d.altitude} m`,
+                          longitude: (d) => `${d.longitude}\u00b0`,
+                          latitude: (d) => `${d.latitude}\u00b0`}, tip: true}),
+    ]
+})
+))
+}});
+
+define({id: "7c25600c", inputs: ["FileAttachment"], outputs: ["pme_models","splits","monthNames"], body: (FileAttachment) => {
+const pme_models = FileAttachment("./data/pme_models.json").json()
+const splits = FileAttachment("./data/splits.json").json()
+const monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+return {pme_models,splits,monthNames};
+}});
+
+define({id: "608b72f7", inputs: ["Inputs","pme_models","display"], body: async (Inputs,pme_models,display) => {
+display(await(
+Inputs.table(pme_models, {maxWidth: 660, header: {
+    model: "Model name",
+    spatial_resolution: "Spatial resolution (km)",
+    temporal_resolution: "Temporal resolution (h)",
+    lead_times: "Lead times (h)"
+  }})
+))
+}});
+
+define({id: "4482e723", inputs: ["Plot","pme_models","display"], body: async (Plot,pme_models,display) => {
+display(await(
+Plot.plot({
+  marginLeft: 95,
+  x: {
+    axis: "bottom",
+    grid: true,
+    label: "Lead times (h)"
+  },
+  y: {
+    grid: true,
+    label: "NWP model"
+  },
+  marks: [
+    Plot.ruleX([0]),
+    Plot.barX(pme_models, {x: "lead_times", y: "model", tip: true, fill: "lightgrey"}),
+    Plot.ruleX([48], {stroke: "tomato"})
+  ]
+})
+))
+}});
+
+define({id: "f97b2af3", inputs: ["Plot","monthNames","splits","display"], body: async (Plot,monthNames,splits,display) => {
+display(await(
+Plot.plot({
+  marginLeft: 55,
+  padding: 0,
+  x: {label: "Month", ticks: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+      tickFormat: d => monthNames[d - 1]},
+  y: {label: "Year", tickFormat: d => d.toString()},
+  color: {legend: true,
+          domain: ["Training", "Validation", "Test"]},
+  marks: [
+    Plot.cell(splits, {x: "month", y: "year", fill: "split", tip: true, inset: 0.5}),
+  ]
+})
+))
+}});
+
+</script>
+<input id="observablehq-sidebar-toggle" type="checkbox" title="Toggle sidebar">
+<label id="observablehq-sidebar-backdrop" for="observablehq-sidebar-toggle"></label>
+<nav id="observablehq-sidebar">
+  <ol>
+    <label id="observablehq-sidebar-close" for="observablehq-sidebar-toggle"></label>
+    <li class="observablehq-link"><a href="./">EMS24</a></li>
+  </ol>
+  <section class="observablehq-section-active">
+    <summary>Contents</summary>
+    <ol>
+    <li class="observablehq-link"><a href="./introduction">Introduction</a></li>
+    <li class="observablehq-link"><a href="./study_zone">Study site</a></li>
+    <li class="observablehq-link observablehq-link-active"><a href="./data">Data</a></li>
+    <li class="observablehq-link"><a href="./methodologies">Methodologies</a></li>
+    <li class="observablehq-link"><a href="./results">Results</a></li>
+    <li class="observablehq-link"><a href="./results_dashboard">Results Dashboard</a></li>
+    <li class="observablehq-link"><a href="./conclusions">Conclusions</a></li>
+    </ol>
+  </section>
+</nav>
+<script>{Object.assign(document.createElement("a"),{href:""}).password&&location.replace(location.href);const e=document.querySelector("#observablehq-sidebar"),t=document.querySelector("#observablehq-sidebar-toggle"),r=sessionStorage.getItem("observablehq-sidebar");r?t.checked=r==="true":t.indeterminate=!0;for(const o of document.querySelectorAll("#observablehq-sidebar summary")){const s=o.parentElement;switch(sessionStorage.getItem(`observablehq-sidebar:${o.textContent}`)){case"true":s.open=!0;break;case"false":s.classList.contains("observablehq-section-active")||(s.open=!1);break}}addEventListener("beforeunload",()=>sessionStorage.setItem("observablehq-sidebar-scrolly",`${e.scrollTop}`));const a=sessionStorage.getItem("observablehq-sidebar-scrolly");a!=null&&(e.style.cssText="overflow: hidden;",e.scrollTop=+a,e.style.cssText="");}</script>
+<aside id="observablehq-toc" data-selector="h1:not(:first-of-type)[id], h2:first-child[id], :not(h1) + h2[id]">
+<nav>
+<div>Contents</div>
+<ol>
+<li class="observablehq-secondary-link"><a href="#temperature-observations">Temperature observations</a></li>
+<li class="observablehq-secondary-link"><a href="#numerical-weather-prediction-model">Numerical Weather Prediction model</a></li>
+<li class="observablehq-secondary-link"><a href="#training%2C-validation%2C-and-test-datasets">Training, validation, and test datasets</a></li>
+</ol>
+</nav>
+</aside>
+<div id="observablehq-center">
+<main id="observablehq-main" class="observablehq">
+<h1 id="data" tabindex="-1"><a class="observablehq-header-anchor" href="#data">Data</a></h1>
+<p>The temperature forecast postprocessing methodologies used in this work require temperature observations and
+Numerical Weather Prediction (NWP) temperature forecasts. The available data for this study comprises 27 months,
+from March 2022 to May 2024 (both included).</p>
+<h2 id="temperature-observations" tabindex="-1"><a class="observablehq-header-anchor" href="#temperature-observations">Temperature observations</a></h2>
+<p>The Meteorological Service of Catalonia maintains a dense network of 185 automatic weather stations (AWS)
+(<a href="https://static-m.meteo.cat/wordpressweb/wp-content/uploads/2017/07/18141912/TECO16_XEMA_SERRA_ETAL.jpg" target="_blank" rel="noopener noreferrer">Serra et al. 2016</a>)
+that meet WMO standards in location, measurements, and quality control. AWS are spread across Catalonia,
+with most of them (161) located in flat and populated areas. The remaining stations are divided evenly,
+with half situated between 500 and 2000 m above sea level (m a.s.l.), and the other half above 2000 m a.s.l.,
+considered high mountainous areas. Data is collected every 30 minutes, but here, only hourly 2-m air temperature data was considered.</p>
+<div class="observablehq observablehq--block"><!--:d0f0ba8f:--></div>
+<div class="observablehq observablehq--block"><!--:41d16915:--></div>
+<div class="observablehq observablehq--block"><observablehq-loading></observablehq-loading><!--:669df3fe:--></div>
+<h2 id="numerical-weather-prediction-model" tabindex="-1"><a class="observablehq-header-anchor" href="#numerical-weather-prediction-model">Numerical Weather Prediction model</a></h2>
+<p>Numerical Weather Prediction (NWP) model data was used from 10 different models to create what is commonly known
+as a Poor Man's Ensemble (PME) or multi-model ensemble. The 10 models considered in this study are presented in
+<a href="#table1">Table 1</a>. These NWP models have different spatial resolutions, ranging from 1 to 10 km. Before selecting
+the nearest grid point of each model from every AWS, an interpolation to a 1 km spatial resolution is applied using
+Python library <a href="https://github.com/meteocat/unimodel" target="_blank" rel="noopener noreferrer">unimodel</a>.</p>
+<p>This approach follows a method similar to that described by <a href="#references">Demaeyer et al., (2023)</a> to account for
+altitude differences between each model's orography and that of a 1 km grid. The correction is performed by applying
+a dynamic lapse-rate correction based on linear regression of air temperature-altitude pairs around each grid point
+of the model, as outlined by <a href="#references">Sheridan et al., (2010)</a>.</p>
+<div class="observablehq observablehq--block"><!--:7c25600c:--></div>
+<p><a name="table1"></a><strong>Table 1:</strong> Characteristics of the NWP models used in this study, including their names, spatial resolutions (in kilometers), temporal resolutions (in hours), and available lead times (in hours).</p>
+<div class="observablehq observablehq--block"><observablehq-loading></observablehq-loading><!--:608b72f7:--></div>
+<p>Since the 10 models considered here have different forecast lead times of 48 and 72 hours, the postprocessing for
+this study is limited to 48 hours. This ensures that all models are postprocessed with consistent lead times,
+and that the applied postprocessing techniques, EMOS Improver and Distributional Regression Networks, receive the
+same amount of input feature variables.</p>
+<div class="observablehq observablehq--block"><observablehq-loading></observablehq-loading><!--:4482e723:--></div>
+<h2 id="training%2C-validation%2C-and-test-datasets" tabindex="-1"><a class="observablehq-header-anchor" href="#training%2C-validation%2C-and-test-datasets">Training, validation, and test datasets</a></h2>
+<p>One of the postprocessing techniques relies on neural networks, which are typically trained using
+training and validation datasets and then evaluated on an unseen dataset called the test dataset.
+In this study, from a total of 27 available months, 18 were allocated to the training set, 5 to
+the validation set, and 4 to the test set. The validation and test months were chosen to encompass
+various characteristics and to cover all seasons of the year. The distribution of each split and
+the months assigned to them are illustrated below.</p>
+<div class="observablehq observablehq--block"><observablehq-loading></observablehq-loading><!--:f97b2af3:--></div>
+<h4 id="references" tabindex="-1"><a class="observablehq-header-anchor" href="#references">References</a></h4>
+<span style="font-size:0.85em;">
+<p>Demaeyer, J., Bhend, J., Lerch, S., Primo, C., Van Schaeybroeck, B., Atencia, A., ... &amp; Vannitsem, S. (2023). The EUPPBench postprocessing benchmark dataset v1. 0. Earth System Science Data, 15(6), 2635-2653.</p>
+<p>Sheridan, P., Smith, S., Brown, A., &amp; Vosper, S. (2010). A simple height‐based correction for temperature downscaling in complex terrain. Meteorological Applications, 17(3), 329-339.</p>
+</span></main>
+<footer id="observablehq-footer">
+<nav><a rel="prev" href="./study_zone"><span>Study site</span></a><a rel="next" href="./methodologies"><span>Methodologies</span></a></nav>
+<div>Built with <a href="https://observablehq.com/" target="_blank" rel="noopener noreferrer">Observable</a> on <a title="2024-07-22T11:36:34">Jul 22, 2024</a>.</div>
+</footer>
+</div>

@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>Results | EMS24</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&amp;display=swap" crossorigin>
+<link rel="preload" as="style" href="./_observablehq/theme-air,near-midnight.css">
+<link rel="preload" as="style" href="./_observablehq/stdlib/inputs.css">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&amp;display=swap" crossorigin>
+<link rel="stylesheet" type="text/css" href="./_observablehq/theme-air,near-midnight.css">
+<link rel="stylesheet" type="text/css" href="./_observablehq/stdlib/inputs.css">
+<link rel="modulepreload" href="./_observablehq/client.js">
+<link rel="modulepreload" href="./_observablehq/runtime.js">
+<link rel="modulepreload" href="./_observablehq/stdlib.js">
+<link rel="modulepreload" href="./_npm/d3-dsv@3.0.1/_esm.js">
+<link rel="modulepreload" href="./_npm/d3@7.9.0/_esm.js">
+<link rel="modulepreload" href="./_observablehq/stdlib/inputs.js">
+<link rel="modulepreload" href="./_npm/@observablehq/plot@0.6.15/_esm.js">
+<link rel="modulepreload" href="./_npm/htl@0.3.1/_esm.js">
+<link rel="modulepreload" href="./_npm/isoformat@0.2.1/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-array@3.2.4/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-axis@3.0.0/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-brush@3.0.0/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-chord@3.0.1/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-color@3.1.0/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-contour@4.0.2/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-delaunay@6.0.4/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-dispatch@3.0.1/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-drag@3.0.0/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-ease@3.0.1/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-fetch@3.0.1/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-force@3.0.0/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-format@3.1.0/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-geo@3.1.1/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-hierarchy@3.1.2/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-interpolate@3.0.1/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-path@3.1.0/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-polygon@3.0.1/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-quadtree@3.0.1/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-random@3.0.1/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-scale@4.0.2/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-scale-chromatic@3.1.0/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-selection@3.0.0/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-shape@3.2.0/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-time@3.1.0/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-time-format@4.1.0/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-timer@3.0.1/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-transition@3.0.1/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-zoom@3.0.0/_esm.js">
+<link rel="modulepreload" href="./_npm/interval-tree-1d@1.0.4/_esm.js">
+<link rel="modulepreload" href="./_npm/internmap@2.0.3/_esm.js">
+<link rel="modulepreload" href="./_npm/delaunator@5.0.1/_esm.js">
+<link rel="modulepreload" href="./_npm/binary-search-bounds@2.0.5/_esm.js">
+<link rel="modulepreload" href="./_npm/robust-predicates@3.0.2/_esm.js">
+<link rel="icon" href="./_file/observable.1af93621.png" type="image/png" sizes="32x32">
+<script type="module">
+
+import {define} from "./_observablehq/client.js";
+import {registerFile} from "./_observablehq/stdlib.js";
+
+registerFile("./data/catalunya_fronteres.json.geojson", {"name":"./data/catalunya_fronteres.json.geojson","mimeType":"application/geo+json","path":"./_file/data/catalunya_fronteres.json.4da36609.geojson","lastModified":1721308795398});
+registerFile("./data/crps_map.json", {"name":"./data/crps_map.json","mimeType":"application/json","path":"./_file/data/crps_map.30599f05.json","lastModified":1721309232275});
+registerFile("./data/ems_crps_results.json", {"name":"./data/ems_crps_results.json","mimeType":"application/json","path":"./_file/data/ems_crps_results.d6e71ecd.json","lastModified":1721044147835});
+registerFile("./data/launches.csv", {"name":"./data/launches.csv","mimeType":"text/csv","path":"./_file/data/launches.df36cc40.csv","lastModified":1719561159478});
+registerFile("./data/rankhist_all.json", {"name":"./data/rankhist_all.json","mimeType":"application/json","path":"./_file/data/rankhist_all.ee8eef99.json","lastModified":1721233092825});
+registerFile("./data/rankhist_lead_times.json", {"name":"./data/rankhist_lead_times.json","mimeType":"application/json","path":"./_file/data/rankhist_lead_times.25774113.json","lastModified":1721215862423});
+
+define({id: "460dbf69", inputs: ["FileAttachment"], outputs: ["launches","ranks","ranksLt","crps","comarques","crpsMap"], body: (FileAttachment) => {
+const launches = FileAttachment("./data/launches.csv").csv({typed: true});
+const ranks = FileAttachment("./data/rankhist_all.json").json();
+const ranksLt = FileAttachment("./data/rankhist_lead_times.json").json();
+const crps = FileAttachment("./data/ems_crps_results.json").json();
+const comarques = FileAttachment("./data/catalunya_fronteres.json.geojson").json();
+const crpsMap = FileAttachment("./data/crps_map.json").json();
+return {launches,ranks,ranksLt,crps,comarques,crpsMap};
+}});
+
+define({id: "fdf7eadc", inputs: ["Plot","d3","launches"], outputs: ["color"], body: (Plot,d3,launches) => {
+const color = Plot.scale({
+  color: {
+    type: "categorical",
+    domain: d3.groupSort(launches, (D) => -D.length, (d) => d.state).filter((d) => d !== "Other"),
+    unknown: "var(--theme-foreground-muted)"
+  }
+});
+return {color};
+}});
+
+define({id: "9075832e", inputs: ["Inputs","Generators"], outputs: ["checkout","subject"], body: (Inputs,Generators) => {
+const checkout = 
+  Inputs.checkbox(["PME", "IMPROVER", "DRN-Mean", "DRN-Members"], {
+    sort: false,
+    unique: true,
+    value: ["PME", "IMPROVER", "DRN-Mean", "DRN-Members"],
+    label: "Choose forecasts:"
+  });
+
+const subject = Generators.input(checkout);
+return {checkout,subject};
+}});
+
+define({id: "d4ffe202", inputs: ["Plot","subject"], outputs: ["plotCRPS"], body: (Plot,subject) => {
+function plotCRPS(data, {width} = {}) {
+
+
+return Plot.plot({
+    title: "",
+    width,
+    height: 300,
+    color: {legend: true, domain: ["PME", "IMPROVER", "DRN-Mean", "DRN-Members"]},
+    marks: [
+      Plot.line(data.filter((d) => subject.includes(d.variable)), {x: "lead_time", y: "value", stroke: "variable", tip: true}),
+      Plot.gridX(),
+      Plot.gridY()
+    ],
+    y: {label: "CRPS"},
+    x: {label: "Lead time (hours)"},
+  });
+}
+return {plotCRPS};
+}});
+
+define({id: "6781270f", inputs: ["Inputs","Generators"], outputs: ["selMap","selectedMap"], body: (Inputs,Generators) => {
+const selMap = Inputs.select(["PME", "IMPROVER", "DRN-Mean", "DRN-Members", "IMPROVER vs PME", "DRN-Mean vs PME", "DRN-Mean vs IMPROVER",
+                                 "DRN-Members vs PME", "DRN-Members vs IMPROVER", "DRN-Members vs DRN-Mean"], {label: "Choose forecast or comparison:"});
+const selectedMap = Generators.input(selMap);
+return {selMap,selectedMap};
+}});
+
+define({id: "f7aea736", inputs: ["d3"], outputs: ["circle"], body: (d3) => {
+const circle = d3.geoCircle().center([1.80, 41.8]).radius(1.2).precision(1)()
+return {circle};
+}});
+
+define({id: "606d0689", inputs: ["selectedMap","Plot","circle","comarques"], outputs: ["plotMapCRPS"], body: (selectedMap,Plot,circle,comarques) => {
+function plotMapCRPS(data, {width} = {}) {
+
+let domain;
+let colorRange;
+if(["PME", "IMPROVER", "DRN-Mean", "DRN-Members"].includes(selectedMap)){
+  domain = [0.4, 1.6]
+  colorRange = ["#1a9850", "#ffffbf", "#d73027"]
+} else {
+  domain = [-0.5, 0.5]
+  colorRange = ["#2166AC", "#FFFFFF", "#B2182B"]
+}
+
+const selCrpsData = data.filter((d) => d.variable == selectedMap)
+
+return Plot.plot({
+    title: "",
+    width,
+    height: 400,
+    projection: {type: "mercator", rotate: [-9, -34], domain: circle},
+    color: {range: colorRange, domain: domain, legend: true, label: "CRPS", nice: false},
+    marks: [
+      Plot.geo(comarques, {stroke: "#ddd", border: "none", background: "none"}),
+      Plot.dot(selCrpsData, {x: "longitude", y: "latitude", fill: "value", stroke: "white", channels: {
+                          id: "station_id",
+                          longitude: (d) => `${d.longitude}\u00b0`,
+                          latitude: (d) => `${d.latitude}\u00b0`}, tip: true, strokeWidth: 0.2})
+    ],
+  });
+}
+return {plotMapCRPS};
+}});
+
+define({id: "c7761e58", mode: "inline", inputs: ["checkout","display"], body: async (checkout,display) => {
+display(await(
+checkout
+))
+}});
+
+define({id: "41d7d4f6", mode: "inline", inputs: ["resize","plotCRPS","crps","display"], body: async (resize,plotCRPS,crps,display) => {
+display(await(
+resize((width) => plotCRPS(crps, {width}))
+))
+}});
+
+define({id: "fc5a1cdd", mode: "inline", inputs: ["selMap","display"], body: async (selMap,display) => {
+display(await(
+selMap
+))
+}});
+
+define({id: "ffea9cf4", mode: "inline", inputs: ["resize","plotMapCRPS","crpsMap","display"], body: async (resize,plotMapCRPS,crpsMap,display) => {
+display(await(
+resize((width) => plotMapCRPS(crpsMap, {width}))
+))
+}});
+
+define({id: "def75dfe", mode: "inline", inputs: ["resize","rankHistAll","ranks","display"], body: async (resize,rankHistAll,ranks,display) => {
+display(await(
+resize((width) => rankHistAll(ranks, {width}))
+))
+}});
+
+define({id: "74ed3f1e", mode: "inline", inputs: ["inputLtSet","display"], body: async (inputLtSet,display) => {
+display(await(
+inputLtSet
+))
+}});
+
+define({id: "10f3d3ab", mode: "inline", inputs: ["resize","rankHistLt","ranksLt","display"], body: async (resize,rankHistLt,ranksLt,display) => {
+display(await(
+resize((width) => rankHistLt(ranksLt, {width}))
+))
+}});
+
+define({id: "375e47c8", mode: "inline", inputs: ["inputLt","display"], body: async (inputLt,display) => {
+display(await(
+inputLt
+))
+}});
+
+define({id: "13b10576", inputs: ["Inputs","Generators"], outputs: ["inputLt","lt"], body: (Inputs,Generators) => {
+const inputLt = Inputs.range([0, 72], {step: 1, label: "Lead time (h)", value: 0, width: 250});
+
+const lt = Generators.input(inputLt)
+return {inputLt,lt};
+}});
+
+define({id: "0a00ecb7", inputs: ["Inputs","Generators"], outputs: ["inputLtSet","ltSet"], body: (Inputs,Generators) => {
+const inputLtSet = Inputs.select(["0-48 h", "49-72 h"], {label: "Lead time set"});
+
+const ltSet = Generators.input(inputLtSet)
+return {inputLtSet,ltSet};
+}});
+
+define({id: "c0740c68", inputs: ["ltSet","Plot"], outputs: ["rankHistAll"], body: (ltSet,Plot) => {
+function rankHistAll(data, {width} = {}) {
+
+let ruleYValue;
+if(ltSet == "0-48 h"){
+  ruleYValue = [1 / 11];
+} else {
+  ruleYValue = [1 / 8];
+}
+
+const setData = data.filter((d) => d.lead_time == ltSet)
+
+const plotData = setData.flatMap(({ forecast, rankhist }) =>
+  rankhist.map((value, index) => ({
+    forecast,
+    bin: index + 1,
+    frequency: value
+  }))
+);
+
+return Plot.plot({
+    width,
+    height: 300,
+    marks: [
+      Plot.barY(plotData, {x: "bin", y: "frequency", fill: "forecast", fx:"forecast"}),
+      Plot.ruleY(ruleYValue, {stroke: "grey"}),
+      Plot.axisFx({anchor: "top"})
+    ],
+    color: {legend: true, domain: ["PME", "IMPROVER", "DRN-Mean", "DRN-Members"]},
+    x: {label: "Rank of observation"},
+    y: {label: "Frequency"},
+    fx: {label: null, anchor: "bottom", domain: ["PME", "IMPROVER", "DRN-Mean", "DRN-Members"]},
+  });
+}
+return {rankHistAll};
+}});
+
+define({id: "950c9223", inputs: ["lt","Plot"], outputs: ["rankHistLt"], body: (lt,Plot) => {
+function rankHistLt(data, {width} = {}) {
+
+const ltData = data.filter((d) => d.lead_time == lt)
+
+const plotData = ltData.flatMap(({ forecast, rankhist }) =>
+  rankhist.map((value, index) => ({
+    forecast,
+    bin: index + 1,
+    frequency: value
+  }))
+);
+
+let ruleYValues;
+if(lt <= 48){
+  ruleYValues = [1 / 11];
+} else {
+  ruleYValues = [1 / 8];
+}
+
+return Plot.plot({
+    width,
+    height: 300,
+    marks: [
+      Plot.barY(plotData, {x: "bin", y: "frequency", fill: "forecast", fx:"forecast"}),
+      Plot.ruleY(ruleYValues, {stroke: "grey"}),
+      Plot.axisFx({anchor: "top"})
+    ],
+    color: {legend: true, domain: ["PME", "IMPROVER", "DRN-Mean", "DRN-Members"]},
+    x: {label: "Rank of observation"},
+    y: {label: "Frequency"},
+    fx: {label: null, anchor: "bottom", domain: ["PME", "IMPROVER", "DRN-Mean", "DRN-Members"]}
+  });
+}
+return {rankHistLt};
+}});
+
+</script>
+<input id="observablehq-sidebar-toggle" type="checkbox" title="Toggle sidebar">
+<label id="observablehq-sidebar-backdrop" for="observablehq-sidebar-toggle"></label>
+<nav id="observablehq-sidebar">
+  <ol>
+    <label id="observablehq-sidebar-close" for="observablehq-sidebar-toggle"></label>
+    <li class="observablehq-link"><a href="./">EMS24</a></li>
+  </ol>
+  <section class="observablehq-section-active">
+    <summary>Contents</summary>
+    <ol>
+    <li class="observablehq-link"><a href="./introduction">Introduction</a></li>
+    <li class="observablehq-link"><a href="./study_zone">Study site</a></li>
+    <li class="observablehq-link"><a href="./data">Data</a></li>
+    <li class="observablehq-link"><a href="./methodologies">Methodologies</a></li>
+    <li class="observablehq-link observablehq-link-active"><a href="./results">Results</a></li>
+    <li class="observablehq-link"><a href="./results_dashboard">Results Dashboard</a></li>
+    <li class="observablehq-link"><a href="./conclusions">Conclusions</a></li>
+    </ol>
+  </section>
+</nav>
+<script>{Object.assign(document.createElement("a"),{href:""}).password&&location.replace(location.href);const e=document.querySelector("#observablehq-sidebar"),t=document.querySelector("#observablehq-sidebar-toggle"),r=sessionStorage.getItem("observablehq-sidebar");r?t.checked=r==="true":t.indeterminate=!0;for(const o of document.querySelectorAll("#observablehq-sidebar summary")){const s=o.parentElement;switch(sessionStorage.getItem(`observablehq-sidebar:${o.textContent}`)){case"true":s.open=!0;break;case"false":s.classList.contains("observablehq-section-active")||(s.open=!1);break}}addEventListener("beforeunload",()=>sessionStorage.setItem("observablehq-sidebar-scrolly",`${e.scrollTop}`));const a=sessionStorage.getItem("observablehq-sidebar-scrolly");a!=null&&(e.style.cssText="overflow: hidden;",e.scrollTop=+a,e.style.cssText="");}</script>
+<aside id="observablehq-toc" data-selector="h1:not(:first-of-type)[id], h2:first-child[id], :not(h1) + h2[id]">
+<nav>
+<div>Contents</div>
+<ol>
+<li class="observablehq-secondary-link"><a href="#continuous-ranked-probability-score">Continuous Ranked Probability Score</a></li>
+<li class="observablehq-secondary-link"><a href="#rank-histograms">Rank histograms</a></li>
+</ol>
+</nav>
+</aside>
+<div id="observablehq-center">
+<main id="observablehq-main" class="observablehq">
+<h1 id="results" tabindex="-1"><a class="observablehq-header-anchor" href="#results">Results</a></h1>
+<p>The verification of the different postprocessing methodologies are presented in this page.</p>
+<!-- Load and transform the data -->
+<div class="observablehq observablehq--block"><!--:460dbf69:--></div>
+<!-- A shared color scale for consistency, sorted by the number of launches -->
+<div class="observablehq observablehq--block"><!--:fdf7eadc:--></div>
+<h2 id="continuous-ranked-probability-score" tabindex="-1"><a class="observablehq-header-anchor" href="#continuous-ranked-probability-score">Continuous Ranked Probability Score</a></h2>
+<p>The Continuous Ranked Probability Score (CRPS) is a measure of the accuracy of probabilistic forecasts,
+considering both the sharpness and the reliability of the forecast distribution. The results considering
+all stations and lead times are indicated in the table below, with DRN-Members being the methodology
+with the lowest CRPS, closely followed by DRN-Mean.</p>
+<table>
+<thead>
+<tr>
+<th>Forecast</th>
+<th>CRPS</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PME</td>
+<td>1.082</td>
+</tr>
+<tr>
+<td>IMPROVER</td>
+<td>0.789</td>
+</tr>
+<tr>
+<td><strong>DRN-Members</strong></td>
+<td><strong>0.768</strong></td>
+</tr>
+<tr>
+<td>DRN-Mean</td>
+<td>0.776</td>
+</tr>
+</tbody>
+</table>
+<p>The CRPS is also analysed from two perspectives:</p>
+<ul>
+<li><strong>Grouped by lead time</strong>: This includes all stations for each lead time and reports the mean value,
+similar to a time series.</li>
+<li><strong>Grouped by station</strong>: This includes all lead times but shows stations individually on a map. This
+also includes comparisons between different methodologies, allowing the user to choose which methodologies
+to compare.</li>
+</ul>
+<div class="observablehq observablehq--block"><!--:9075832e:--></div>
+<div class="observablehq observablehq--block"><!--:d4ffe202:--></div>
+<div class="observablehq observablehq--block"><!--:6781270f:--></div>
+<div class="observablehq observablehq--block"><!--:f7aea736:--></div>
+<div class="observablehq observablehq--block"><!--:606d0689:--></div>
+<div class="grid grid-cols-2">
+  <div class="card">
+    <h2>Continuous Ranked Probability Score by lead time</h2>
+    <div><observablehq-loading></observablehq-loading><!--:c7761e58:--></div>
+    <observablehq-loading></observablehq-loading><!--:41d7d4f6:-->
+    <div class="card">
+<ul>
+<li>
+<p>The time series of the PME forecast exhibits a diurnal cycle with worse CRPS values during nighttime lead times and shows an increasing trend in CRPS values as the lead time increases.</p>
+</li>
+<li>
+<p>Regardless of the postprocessing methodology, all techniques improve the mean CRPS value for each lead time compared to PME. DRN-Members is the technique that exhibits the lowest CRPS during most lead times.</p>
+</li>
+<li>
+<p>There is a noticeable worsening of the CRPS from 48 hours of lead time, mainly due to the loss of 3 members in the ensemble. DRN-Mean is particularly affected.</p>
+  </li></ul></div>
+</div>
+
+
+</div>
+<div class="grid grid-cols-2">
+  <div class="card">
+    <h2>Continuous Ranked Probability Score on a map</h2>
+    <div><observablehq-loading></observablehq-loading><!--:fc5a1cdd:--></div>
+    <observablehq-loading></observablehq-loading><!--:ffea9cf4:-->
+    <div class="card">
+<ul>
+<li>
+<p>The highest CRPS values of the PME raw forecast nearly reach 3.0, with most of the highest values concentrated in the Pyrenees (north of the country). In contrast, the coastline stations show better performance regarding CRPS.</p>
+</li>
+<li>
+<p>All postprocessing methodologies exhibit a reduction in CRPS compared to the PME raw forecast. This is evident when a comparison (forecast 1 vs. forecast 2) is selected. Cool colors indicate that the CRPS of forecast 1 is lower than that of forecast 2 for a given station.</p>
+</li>
+<li>
+<p>IMPROVER and DRN-Members show similar performance in terms of CRPS reduction. Although DRN-Mean improves upon PME and outperforms IMPROVER at some stations, it generally does not surpass the performance of IMPROVER and DRN-Members methodologies.</p>
+  </li></ul></div>
+</div>
+
+
+</div>
+<h2 id="rank-histograms" tabindex="-1"><a class="observablehq-header-anchor" href="#rank-histograms">Rank histograms</a></h2>
+<p>A rank histogram is used to verify ensemble forecasts by showing the distribution of the ranks
+of observations relative to the ensemble predictions. It indicates whether the ensemble
+forecast system is biased and whether it has the appropriate spread. A flat, uniform rank
+histogram suggests that the ensemble forecasts are reliable, while deviations
+from uniformity indicate biases or incorrect spread in the forecasts.</p>
+<p>Rank histograms are analysed from two points of view:</p>
+<ul>
+<li>
+<p><strong>Grouped by lead time range</strong>: this includes all stations and is divided into two sets
+of lead times. One group includes lead times from 0 to 48 hours, and the other from
+49 to 72 hours. This distinction accounts for the different number of members available
+in the ensemble at each lead time.</p>
+</li>
+<li>
+<p><strong>Individual lead times</strong>: this also includes all stations but presents the rank histograms
+for each lead time separately.</p>
+</li>
+</ul>
+<div class="grid grid-cols-2">
+   <div class="card">
+    <h2>Rank histogram</h2>
+    <observablehq-loading></observablehq-loading><!--:def75dfe:-->
+    <div><observablehq-loading></observablehq-loading><!--:74ed3f1e:--></div>
+    <div class="card">
+<ul>
+<li>
+<p>The PME forecast shows clear underdispersion, indicated by a pronounced U shape in the rank histogram for both sets of lead times.</p>
+</li>
+<li>
+<p>EMOS-IMPROVER mitigates the underdispersion observed in PME; however, it still exhibits some underdispersion regardless of the lead time range.</p>
+</li>
+<li>
+<p>DRN-Mean and DRN-Members exhibit the best results for the 0-48 hour lead time set, with DRN-Members being less biased and fairly uniform. However, for the 49-72 hour lead time range, both show a positive bias, which is less pronounced for DRN-Members.</p>
+</li></ul></div>
+</div>
+
+
+</div>
+<div class="grid grid-cols-2">
+  <div class="card">
+    <h2>Rank histogram by lead time</h2>
+    <observablehq-loading></observablehq-loading><!--:10f3d3ab:-->
+    <div><observablehq-loading></observablehq-loading><!--:375e47c8:--></div>
+  <div class="card">
+<ul>
+<li>
+<p>During all night-hour lead times, PME and EMOS-IMPROVER forecasts exhibit clear underdispersion, which is more pronounced for PME. DRN-Mean and DRN-Members show better performance, but for night lead times after 49 hours, they exhibit some positive bias.</p>
+</li>
+<li>
+<p>For daylight-hour lead times, DRN-Mean and DRN-Members exhibit a fairly flat rank histogram for most lead times, obtaining the best results compared to other methods.</p>
+</li>
+<li>
+<p>From lead times 6 to 12 hours, PME exhibits a clear positive bias, while a negative bias is reported from 16 to 21 hours. This behavior is mitigated by IMPROVER postprocessing and is almost fully corrected by DRN methodologies.</p>
+</li></ul></div>
+</div>
+
+
+</div>
+<div class="observablehq observablehq--block"><!--:13b10576:--></div>
+<div class="observablehq observablehq--block"><!--:0a00ecb7:--></div>
+<hr>
+<!-- Plot of launch history -->
+<div class="observablehq observablehq--block"><!--:c0740c68:--></div>
+<div class="observablehq observablehq--block"><!--:950c9223:--></div>
+</main>
+<footer id="observablehq-footer">
+<nav><a rel="prev" href="./methodologies"><span>Methodologies</span></a><a rel="next" href="./results_dashboard"><span>Results Dashboard</span></a></nav>
+<div>Built with <a href="https://observablehq.com/" target="_blank" rel="noopener noreferrer">Observable</a> on <a title="2024-07-22T11:36:34">Jul 22, 2024</a>.</div>
+</footer>
+</div>

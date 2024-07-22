@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>Study site | EMS24</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&amp;display=swap" crossorigin>
+<link rel="preload" as="style" href="./_observablehq/theme-air,near-midnight.css">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&amp;display=swap" crossorigin>
+<link rel="stylesheet" type="text/css" href="./_observablehq/theme-air,near-midnight.css">
+<link rel="modulepreload" href="./_observablehq/client.js">
+<link rel="modulepreload" href="./_observablehq/runtime.js">
+<link rel="modulepreload" href="./_observablehq/stdlib.js">
+<link rel="modulepreload" href="./_npm/geotiff@2.1.3/_esm.js">
+<link rel="modulepreload" href="./_npm/d3@7.9.0/_esm.js">
+<link rel="modulepreload" href="./_npm/@observablehq/plot@0.6.15/_esm.js">
+<link rel="modulepreload" href="./_npm/@petamoriken/float16@3.8.7/_esm.js">
+<link rel="modulepreload" href="./_npm/xml-utils@1.10.1/get-attribute.js._esm.js">
+<link rel="modulepreload" href="./_npm/xml-utils@1.10.1/find-tags-by-name.js._esm.js">
+<link rel="modulepreload" href="./_npm/quick-lru@6.1.2/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-array@3.2.4/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-axis@3.0.0/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-brush@3.0.0/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-chord@3.0.1/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-color@3.1.0/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-contour@4.0.2/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-delaunay@6.0.4/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-dispatch@3.0.1/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-drag@3.0.0/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-dsv@3.0.1/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-ease@3.0.1/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-fetch@3.0.1/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-force@3.0.0/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-format@3.1.0/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-geo@3.1.1/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-hierarchy@3.1.2/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-interpolate@3.0.1/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-path@3.1.0/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-polygon@3.0.1/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-quadtree@3.0.1/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-random@3.0.1/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-scale@4.0.2/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-scale-chromatic@3.1.0/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-selection@3.0.0/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-shape@3.2.0/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-time@3.1.0/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-time-format@4.1.0/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-timer@3.0.1/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-transition@3.0.1/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-zoom@3.0.0/_esm.js">
+<link rel="modulepreload" href="./_npm/isoformat@0.2.1/_esm.js">
+<link rel="modulepreload" href="./_npm/interval-tree-1d@1.0.4/_esm.js">
+<link rel="modulepreload" href="./_npm/internmap@2.0.3/_esm.js">
+<link rel="modulepreload" href="./_npm/delaunator@5.0.1/_esm.js">
+<link rel="modulepreload" href="./_npm/binary-search-bounds@2.0.5/_esm.js">
+<link rel="modulepreload" href="./_npm/robust-predicates@3.0.2/_esm.js">
+<link rel="icon" href="./_file/observable.1af93621.png" type="image/png" sizes="32x32">
+<script type="module">
+
+import {define} from "./_observablehq/client.js";
+import {registerFile} from "./_observablehq/stdlib.js";
+
+registerFile("./data/cat_dem.tif", {"name":"./data/cat_dem.tif","mimeType":"image/tiff","path":"./_file/data/cat_dem.1e157369.tif","lastModified":1721386042549});
+registerFile("./data/catalunya_fronteres.json.geojson", {"name":"./data/catalunya_fronteres.json.geojson","mimeType":"application/geo+json","path":"./_file/data/catalunya_fronteres.json.4da36609.geojson","lastModified":1721308795398});
+registerFile("./data/ne_10m_coastline.json", {"name":"./data/ne_10m_coastline.json","mimeType":"application/json","path":"./_file/data/ne_10m_coastline.dee8d0c2.json","lastModified":1720590719053});
+registerFile("./data/station_metadata.json", {"name":"./data/station_metadata.json","mimeType":"application/json","path":"./_file/data/station_metadata.8207c0f0.json","lastModified":1721122309625});
+
+define({id: "d141441a", inputs: ["FileAttachment"], outputs: ["catalunya","liniaCosta","stations"], body: (FileAttachment) => {
+const catalunya = FileAttachment("./data/catalunya_fronteres.json.geojson").json()
+const liniaCosta = FileAttachment("./data/ne_10m_coastline.json").json()
+const stations = FileAttachment("./data/station_metadata.json").json()
+return {catalunya,liniaCosta,stations};
+}});
+
+define({id: "60d060cb", inputs: ["d3"], outputs: ["circle"], body: (d3) => {
+const circle = d3.geoCircle().center([1.80, 41.6]).radius(10.45).precision(1)()
+return {circle};
+}});
+
+define({id: "e0f206fe", inputs: ["Plot","circle","catalunya","liniaCosta","display"], body: async (Plot,circle,catalunya,liniaCosta,display) => {
+display(await(
+Plot.plot({
+  projection: {
+    type: "mercator",
+    rotate: [-9, -34],
+    domain: circle
+  },
+  width: 650,
+  height: 400,
+  marks: [
+    Plot.geo(catalunya, { stroke: "#ddd", fill: "#66c2a5" }),
+    Plot.geo(liniaCosta, { stroke: "#ddd"}),
+    ]
+})
+))
+}});
+
+define({id: "9ac8be1c", inputs: ["FileAttachment"], outputs: ["fromArrayBuffer","dem"], body: async (FileAttachment) => {
+const {fromArrayBuffer} = await import("./_npm/geotiff@2.1.3/_esm.js");
+
+const dem = FileAttachment("./data/cat_dem.tif").arrayBuffer().then(fromArrayBuffer)
+return {fromArrayBuffer,dem};
+}});
+
+define({id: "0483a80e", inputs: ["dem"], outputs: ["image","values"], body: async (dem) => {
+const image = await dem.getImage();
+const [values] = await dem.readRasters();
+return {image,values};
+}});
+
+define({id: "e28a8b54", inputs: ["d3"], outputs: ["sequence","terrainClrs"], body: (d3) => {
+function sequence(clrs, interp = d3.interpolateRgb) {
+  const interps = [];
+  for (let i = 0; i < clrs.length - 1; i++) {
+    interps.push(interp(clrs[i], clrs[i + 1]));
+  }
+  return (t) => {
+    if (t < 0) {
+      return "blue";
+    }
+    const scaledT = d3.scaleLinear().range([0, clrs.length - 1])(t);
+    const intT = Math.min(clrs.length - 2, Math.floor(scaledT));
+    return interps[intT](scaledT - intT);
+  };
+}
+
+const terrainClrs = [
+  "rgb(141,166,141)",
+  "rgb(172,194,155)",
+  "rgb(221,219,167)",
+  "rgb(254,235,181)",
+  "rgb(248,212,153)",
+  "rgb(241,170,109)",
+  "rgb(227,112,72)"
+]
+return {sequence,terrainClrs};
+}});
+
+define({id: "e1090371", inputs: ["Plot","sequence","terrainClrs","values","image","display"], body: async (Plot,sequence,terrainClrs,values,image,display) => {
+display(await(
+Plot.plot({
+  width: 650,
+  height: 400,
+  color: {
+    label: "Elevation (m)",
+    interpolate: sequence(terrainClrs),
+    legend: true,
+    domain: [0, 3000]
+  },
+  marks: [
+    Plot.raster(values, {width: image.getWidth(), height: image.getHeight()}),
+    ],
+  y: {reverse: true, axis: null},
+  x: {axis: null},
+  inset: 10
+})
+))
+}});
+
+</script>
+<input id="observablehq-sidebar-toggle" type="checkbox" title="Toggle sidebar">
+<label id="observablehq-sidebar-backdrop" for="observablehq-sidebar-toggle"></label>
+<nav id="observablehq-sidebar">
+  <ol>
+    <label id="observablehq-sidebar-close" for="observablehq-sidebar-toggle"></label>
+    <li class="observablehq-link"><a href="./">EMS24</a></li>
+  </ol>
+  <section class="observablehq-section-active">
+    <summary>Contents</summary>
+    <ol>
+    <li class="observablehq-link"><a href="./introduction">Introduction</a></li>
+    <li class="observablehq-link observablehq-link-active"><a href="./study_zone">Study site</a></li>
+    <li class="observablehq-link"><a href="./data">Data</a></li>
+    <li class="observablehq-link"><a href="./methodologies">Methodologies</a></li>
+    <li class="observablehq-link"><a href="./results">Results</a></li>
+    <li class="observablehq-link"><a href="./results_dashboard">Results Dashboard</a></li>
+    <li class="observablehq-link"><a href="./conclusions">Conclusions</a></li>
+    </ol>
+  </section>
+</nav>
+<script>{Object.assign(document.createElement("a"),{href:""}).password&&location.replace(location.href);const e=document.querySelector("#observablehq-sidebar"),t=document.querySelector("#observablehq-sidebar-toggle"),r=sessionStorage.getItem("observablehq-sidebar");r?t.checked=r==="true":t.indeterminate=!0;for(const o of document.querySelectorAll("#observablehq-sidebar summary")){const s=o.parentElement;switch(sessionStorage.getItem(`observablehq-sidebar:${o.textContent}`)){case"true":s.open=!0;break;case"false":s.classList.contains("observablehq-section-active")||(s.open=!1);break}}addEventListener("beforeunload",()=>sessionStorage.setItem("observablehq-sidebar-scrolly",`${e.scrollTop}`));const a=sessionStorage.getItem("observablehq-sidebar-scrolly");a!=null&&(e.style.cssText="overflow: hidden;",e.scrollTop=+a,e.style.cssText="");}</script>
+<aside id="observablehq-toc" data-selector="h1:not(:first-of-type)[id], h2:first-child[id], :not(h1) + h2[id]">
+<nav>
+</nav>
+</aside>
+<div id="observablehq-center">
+<main id="observablehq-main" class="observablehq">
+<h1 id="study-site" tabindex="-1"><a class="observablehq-header-anchor" href="#study-site">Study site</a></h1>
+<p>Catalonia is located in the northeastern part of the Iberian Peninsula and spans approximately 32,000 km².
+It is predominantly characterized by a Mediterranean climate. The region is bordered by the Pyrenees mountain
+range to the north, the Mediterranean Sea to the east and south, and the Ebre Valley to the west.</p>
+<div class="observablehq observablehq--block"><!--:d141441a:--></div>
+<div class="observablehq observablehq--block"><!--:60d060cb:--></div>
+<div class="observablehq observablehq--block"><observablehq-loading></observablehq-loading><!--:e0f206fe:--></div>
+<p>Despite its relatively small area, Catalonia exhibits significant orographic variability. This includes
+the summits of the Pyrenees, which rise above 3,000 meters above sea level (ASL), coastal ranges that reach
+between 500 and 1,000 meters ASL, and extensive plains such as the Central Depression.</p>
+<div class="observablehq observablehq--block"><!--:9ac8be1c:--></div>
+<div class="observablehq observablehq--block"><!--:0483a80e:--></div>
+<div class="observablehq observablehq--block"><!--:e28a8b54:--></div>
+<div class="observablehq observablehq--block"><observablehq-loading></observablehq-loading><!--:e1090371:--></div>
+<p>These geographic variations result in pronounced temperature and precipitation contrasts across the
+region. In the interior, mean annual temperatures range from 2.1°C to 18°C, and mean annual precipitation
+varies from 320 mm to 1,560 mm, depending on the area (Barnolas et al., 2024).</p>
+<h4 id="references" tabindex="-1"><a class="observablehq-header-anchor" href="#references">References</a></h4>
+<span style="font-size:0.85em;">
+<p>Barnolas, M., Prohom, M., Serra, A. &amp; Martín-Vide, J. (2024). Atles Climàtic de Catalunya 1991-2020. Termopluviometria mitjana. Servei Meteorològic de Catalunya, Nota d'estudi 75.</p>
+</span></main>
+<footer id="observablehq-footer">
+<nav><a rel="prev" href="./introduction"><span>Introduction</span></a><a rel="next" href="./data"><span>Data</span></a></nav>
+<div>Built with <a href="https://observablehq.com/" target="_blank" rel="noopener noreferrer">Observable</a> on <a title="2024-07-22T11:36:34">Jul 22, 2024</a>.</div>
+</footer>
+</div>

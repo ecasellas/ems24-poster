@@ -1,0 +1,1094 @@
+[
+    {
+        "station_id": "C6",
+        "longitude": 0.95172,
+        "latitude": 41.6566,
+        "altitude": 264.0
+    },
+    {
+        "station_id": "C7",
+        "longitude": 1.16234,
+        "latitude": 41.66695,
+        "altitude": 427.0
+    },
+    {
+        "station_id": "C8",
+        "longitude": 1.29609,
+        "latitude": 41.67555,
+        "altitude": 554.0
+    },
+    {
+        "station_id": "C9",
+        "longitude": 0.39988,
+        "latitude": 40.71825,
+        "altitude": 240.0
+    },
+    {
+        "station_id": "CC",
+        "longitude": 2.20862,
+        "latitude": 42.07398,
+        "altitude": 626.0
+    },
+    {
+        "station_id": "CD",
+        "longitude": 1.43277,
+        "latitude": 42.37083,
+        "altitude": 849.0
+    },
+    {
+        "station_id": "CE",
+        "longitude": 1.80813,
+        "latitude": 41.53109,
+        "altitude": 316.0
+    },
+    {
+        "station_id": "CG",
+        "longitude": 2.41456,
+        "latitude": 42.37717,
+        "altitude": 1405.0
+    },
+    {
+        "station_id": "CI",
+        "longitude": 2.36429,
+        "latitude": 42.25839,
+        "altitude": 852.0
+    },
+    {
+        "station_id": "CJ",
+        "longitude": 1.33132,
+        "latitude": 42.21624,
+        "altitude": 566.5
+    },
+    {
+        "station_id": "CL",
+        "longitude": 1.76796,
+        "latitude": 41.67399,
+        "altitude": 349.0
+    },
+    {
+        "station_id": "CP",
+        "longitude": 1.03893,
+        "latitude": 42.13924,
+        "altitude": 690.0
+    },
+    {
+        "station_id": "CQ",
+        "longitude": 1.02569,
+        "latitude": 41.99546,
+        "altitude": 594.0
+    },
+    {
+        "station_id": "CR",
+        "longitude": 1.9624,
+        "latitude": 42.08032,
+        "altitude": 873.0
+    },
+    {
+        "station_id": "CT",
+        "longitude": 0.74362,
+        "latitude": 42.39811,
+        "altitude": 823.0
+    },
+    {
+        "station_id": "CW",
+        "longitude": 1.09894,
+        "latitude": 41.39241,
+        "altitude": 446.0
+    },
+    {
+        "station_id": "CY",
+        "longitude": 2.17873,
+        "latitude": 41.87813,
+        "altitude": 816.0
+    },
+    {
+        "station_id": "D1",
+        "longitude": 0.75383,
+        "latitude": 41.28521,
+        "altitude": 404.0
+    },
+    {
+        "station_id": "D2",
+        "longitude": 1.915,
+        "latitude": 41.59252,
+        "altitude": 343.0
+    },
+    {
+        "station_id": "D3",
+        "longitude": 1.93564,
+        "latitude": 41.38197,
+        "altitude": 252.0
+    },
+    {
+        "station_id": "D4",
+        "longitude": 3.18165,
+        "latitude": 42.27065,
+        "altitude": 24.0
+    },
+    {
+        "station_id": "D5",
+        "longitude": 2.12379,
+        "latitude": 41.41864,
+        "altitude": 411.0
+    },
+    {
+        "station_id": "D6",
+        "longitude": 3.16622,
+        "latitude": 42.43515,
+        "altitude": 196.0
+    },
+    {
+        "station_id": "D7",
+        "longitude": 0.59376,
+        "latitude": 41.18499,
+        "altitude": 53.0
+    },
+    {
+        "station_id": "D8",
+        "longitude": 0.30565,
+        "latitude": 40.95134,
+        "altitude": 515.0
+    },
+    {
+        "station_id": "D9",
+        "longitude": 1.52121,
+        "latitude": 41.21553,
+        "altitude": 59.0
+    },
+    {
+        "station_id": "DB",
+        "longitude": 0.71581,
+        "latitude": 40.87287,
+        "altitude": 179.0
+    },
+    {
+        "station_id": "DF",
+        "longitude": 3.03543,
+        "latitude": 41.97751,
+        "altitude": 28.6
+    },
+    {
+        "station_id": "DG",
+        "longitude": 2.15517,
+        "latitude": 42.39848,
+        "altitude": 1971.4
+    },
+    {
+        "station_id": "DI",
+        "longitude": 1.62386,
+        "latitude": 41.43292,
+        "altitude": 415.0
+    },
+    {
+        "station_id": "DJ",
+        "longitude": 2.78969,
+        "latitude": 42.11653,
+        "altitude": 176.0
+    },
+    {
+        "station_id": "DK",
+        "longitude": 1.41846,
+        "latitude": 41.14677,
+        "altitude": 2.0
+    },
+    {
+        "station_id": "DL",
+        "longitude": 0.83449,
+        "latitude": 40.70719,
+        "altitude": 0.5
+    },
+    {
+        "station_id": "DN",
+        "longitude": 2.63108,
+        "latitude": 41.96095,
+        "altitude": 150.0
+    },
+    {
+        "station_id": "DO",
+        "longitude": 3.03241,
+        "latitude": 41.80857,
+        "altitude": 14.0
+    },
+    {
+        "station_id": "DP",
+        "longitude": 1.8664,
+        "latitude": 42.38605,
+        "altitude": 1097.0
+    },
+    {
+        "station_id": "DQ",
+        "longitude": 1.36259,
+        "latitude": 41.30728,
+        "altitude": 287.0
+    },
+    {
+        "station_id": "H1",
+        "longitude": 1.65306,
+        "latitude": 41.58642,
+        "altitude": 333.0
+    },
+    {
+        "station_id": "J5",
+        "longitude": 2.83423,
+        "latitude": 42.34215,
+        "altitude": 158.0
+    },
+    {
+        "station_id": "KP",
+        "longitude": 2.69436,
+        "latitude": 41.73894,
+        "altitude": 36.0
+    },
+    {
+        "station_id": "MQ",
+        "longitude": 1.69584,
+        "latitude": 41.92047,
+        "altitude": 402.0
+    },
+    {
+        "station_id": "MR",
+        "longitude": 0.9106,
+        "latitude": 41.25079,
+        "altitude": 500.0
+    },
+    {
+        "station_id": "MS",
+        "longitude": 1.97747,
+        "latitude": 42.25978,
+        "altitude": 938.0
+    },
+    {
+        "station_id": "MV",
+        "longitude": 1.67295,
+        "latitude": 42.13598,
+        "altitude": 845.0
+    },
+    {
+        "station_id": "U1",
+        "longitude": 2.95481,
+        "latitude": 42.30648,
+        "altitude": 31.0
+    },
+    {
+        "station_id": "U2",
+        "longitude": 3.0968,
+        "latitude": 42.17716,
+        "altitude": 4.0
+    },
+    {
+        "station_id": "U3",
+        "longitude": 1.63032,
+        "latitude": 41.37491,
+        "altitude": 257.0
+    },
+    {
+        "station_id": "U4",
+        "longitude": 1.84699,
+        "latitude": 41.83094,
+        "altitude": 507.0
+    },
+    {
+        "station_id": "U6",
+        "longitude": 1.06661,
+        "latitude": 41.08017,
+        "altitude": 29.0
+    },
+    {
+        "station_id": "U7",
+        "longitude": 0.50525,
+        "latitude": 40.85936,
+        "altitude": 52.0
+    },
+    {
+        "station_id": "U9",
+        "longitude": 0.61635,
+        "latitude": 40.76947,
+        "altitude": 62.0
+    },
+    {
+        "station_id": "UA",
+        "longitude": 0.76943,
+        "latitude": 40.9091,
+        "altitude": 93.0
+    },
+    {
+        "station_id": "UB",
+        "longitude": 3.06195,
+        "latitude": 42.05398,
+        "altitude": 15.0
+    },
+    {
+        "station_id": "UE",
+        "longitude": 3.15719,
+        "latitude": 42.02306,
+        "altitude": 4.0
+    },
+    {
+        "station_id": "UF",
+        "longitude": 1.90775,
+        "latitude": 41.28832,
+        "altitude": 573.0
+    },
+    {
+        "station_id": "UG",
+        "longitude": 2.03787,
+        "latitude": 41.29928,
+        "altitude": 3.0
+    },
+    {
+        "station_id": "UH",
+        "longitude": 1.48769,
+        "latitude": 41.34171,
+        "altitude": 545.0
+    },
+    {
+        "station_id": "UI",
+        "longitude": 1.76218,
+        "latitude": 42.26477,
+        "altitude": 1386.0
+    },
+    {
+        "station_id": "UJ",
+        "longitude": 1.3683,
+        "latitude": 41.52879,
+        "altitude": 709.0
+    },
+    {
+        "station_id": "UK",
+        "longitude": 1.80479,
+        "latitude": 41.27861,
+        "altitude": 161.0
+    },
+    {
+        "station_id": "UM",
+        "longitude": 0.66789,
+        "latitude": 41.35991,
+        "altitude": 505.0
+    },
+    {
+        "station_id": "UN",
+        "longitude": 2.92694,
+        "latitude": 41.87449,
+        "altitude": 171.0
+    },
+    {
+        "station_id": "UO",
+        "longitude": 2.82069,
+        "latitude": 41.91461,
+        "altitude": 97.0
+    },
+    {
+        "station_id": "UP",
+        "longitude": 2.37702,
+        "latitude": 41.51773,
+        "altitude": 81.0
+    },
+    {
+        "station_id": "UQ",
+        "longitude": 2.44532,
+        "latitude": 41.61991,
+        "altitude": 460.0
+    },
+    {
+        "station_id": "US",
+        "longitude": 0.52329,
+        "latitude": 40.55786,
+        "altitude": 24.0
+    },
+    {
+        "station_id": "UU",
+        "longitude": 0.6321,
+        "latitude": 40.70776,
+        "altitude": 3.0
+    },
+    {
+        "station_id": "UW",
+        "longitude": 0.65922,
+        "latitude": 40.62725,
+        "altitude": 0.0
+    },
+    {
+        "station_id": "UX",
+        "longitude": 0.37112,
+        "latitude": 40.62652,
+        "altitude": 210.0
+    },
+    {
+        "station_id": "UY",
+        "longitude": 0.76103,
+        "latitude": 41.87912,
+        "altitude": 576.0
+    },
+    {
+        "station_id": "V1",
+        "longitude": 0.82939,
+        "latitude": 41.78487,
+        "altitude": 238.0
+    },
+    {
+        "station_id": "V4",
+        "longitude": 2.21483,
+        "latitude": 42.11477,
+        "altitude": 684.0
+    },
+    {
+        "station_id": "V5",
+        "longitude": 2.11993,
+        "latitude": 42.03947,
+        "altitude": 774.0
+    },
+    {
+        "station_id": "V8",
+        "longitude": 0.87741,
+        "latitude": 41.67279,
+        "altitude": 223.0
+    },
+    {
+        "station_id": "VA",
+        "longitude": 0.51161,
+        "latitude": 41.19645,
+        "altitude": 257.0
+    },
+    {
+        "station_id": "VB",
+        "longitude": 0.63517,
+        "latitude": 41.06289,
+        "altitude": 32.0
+    },
+    {
+        "station_id": "VC",
+        "longitude": 0.43266,
+        "latitude": 41.24415,
+        "altitude": 69.0
+    },
+    {
+        "station_id": "VD",
+        "longitude": 1.20381,
+        "latitude": 41.68939,
+        "altitude": 429.0
+    },
+    {
+        "station_id": "VH",
+        "longitude": 0.39301,
+        "latitude": 41.65814,
+        "altitude": 259.0
+    },
+    {
+        "station_id": "VK",
+        "longitude": 0.4487,
+        "latitude": 41.68328,
+        "altitude": 286.0
+    },
+    {
+        "station_id": "VM",
+        "longitude": 0.62839,
+        "latitude": 41.7145,
+        "altitude": 222.0
+    },
+    {
+        "station_id": "VN",
+        "longitude": 2.74262,
+        "latitude": 41.88244,
+        "altitude": 117.0
+    },
+    {
+        "station_id": "VO",
+        "longitude": 1.42792,
+        "latitude": 42.08745,
+        "altitude": 785.0
+    },
+    {
+        "station_id": "VP",
+        "longitude": 1.53853,
+        "latitude": 41.80483,
+        "altitude": 659.0
+    },
+    {
+        "station_id": "VQ",
+        "longitude": 1.16774,
+        "latitude": 41.1713,
+        "altitude": 112.0
+    },
+    {
+        "station_id": "VS",
+        "longitude": 0.77889,
+        "latitude": 42.63835,
+        "altitude": 2247.0
+    },
+    {
+        "station_id": "VU",
+        "longitude": 1.91718,
+        "latitude": 41.63286,
+        "altitude": 421.0
+    },
+    {
+        "station_id": "VV",
+        "longitude": 2.02647,
+        "latitude": 41.68129,
+        "altitude": 528.0
+    },
+    {
+        "station_id": "VX",
+        "longitude": 2.30291,
+        "latitude": 41.74761,
+        "altitude": 1030.0
+    },
+    {
+        "station_id": "VY",
+        "longitude": 1.29863,
+        "latitude": 41.25095,
+        "altitude": 240.0
+    },
+    {
+        "station_id": "VZ",
+        "longitude": 3.00736,
+        "latitude": 42.38443,
+        "altitude": 83.0
+    },
+    {
+        "station_id": "W1",
+        "longitude": 3.09021,
+        "latitude": 42.24726,
+        "altitude": 2.0
+    },
+    {
+        "station_id": "W4",
+        "longitude": 1.72857,
+        "latitude": 41.36619,
+        "altitude": 240.0
+    },
+    {
+        "station_id": "W5",
+        "longitude": 1.31489,
+        "latitude": 42.07683,
+        "altitude": 490.0
+    },
+    {
+        "station_id": "W8",
+        "longitude": 1.15998,
+        "latitude": 41.44237,
+        "altitude": 438.0
+    },
+    {
+        "station_id": "W9",
+        "longitude": 2.45451,
+        "latitude": 42.14557,
+        "altitude": 461.0
+    },
+    {
+        "station_id": "WA",
+        "longitude": 1.1541,
+        "latitude": 41.87694,
+        "altitude": 443.0
+    },
+    {
+        "station_id": "WB",
+        "longitude": 0.67022,
+        "latitude": 41.76036,
+        "altitude": 267.0
+    },
+    {
+        "station_id": "WC",
+        "longitude": 0.92446,
+        "latitude": 41.63642,
+        "altitude": 261.0
+    },
+    {
+        "station_id": "WD",
+        "longitude": 0.31884,
+        "latitude": 41.08671,
+        "altitude": 382.0
+    },
+    {
+        "station_id": "WE",
+        "longitude": 2.30014,
+        "latitude": 41.5444,
+        "altitude": 126.0
+    },
+    {
+        "station_id": "WG",
+        "longitude": 0.64804,
+        "latitude": 41.80104,
+        "altitude": 301.0
+    },
+    {
+        "station_id": "WI",
+        "longitude": 0.4809,
+        "latitude": 41.35741,
+        "altitude": 350.0
+    },
+    {
+        "station_id": "WJ",
+        "longitude": 0.72182,
+        "latitude": 41.1223,
+        "altitude": 141.0
+    },
+    {
+        "station_id": "WK",
+        "longitude": 0.57768,
+        "latitude": 41.81949,
+        "altitude": 268.0
+    },
+    {
+        "station_id": "WL",
+        "longitude": 1.0882,
+        "latitude": 41.57236,
+        "altitude": 413.0
+    },
+    {
+        "station_id": "WM",
+        "longitude": 1.8267,
+        "latitude": 42.10736,
+        "altitude": 1167.0
+    },
+    {
+        "station_id": "WN",
+        "longitude": 1.83751,
+        "latitude": 41.59539,
+        "altitude": 916.0
+    },
+    {
+        "station_id": "WO",
+        "longitude": 1.46717,
+        "latitude": 41.27151,
+        "altitude": 185.0
+    },
+    {
+        "station_id": "WP",
+        "longitude": 1.69337,
+        "latitude": 41.48518,
+        "altitude": 325.0
+    },
+    {
+        "station_id": "WQ",
+        "longitude": 0.72952,
+        "latitude": 42.0513,
+        "altitude": 1572.0
+    },
+    {
+        "station_id": "WR",
+        "longitude": 0.79748,
+        "latitude": 41.2163,
+        "altitude": 300.0
+    },
+    {
+        "station_id": "WS",
+        "longitude": 2.41877,
+        "latitude": 41.84008,
+        "altitude": 953.0
+    },
+    {
+        "station_id": "WT",
+        "longitude": 2.75658,
+        "latitude": 41.64707,
+        "altitude": 2.0
+    },
+    {
+        "station_id": "WU",
+        "longitude": 2.24757,
+        "latitude": 41.45215,
+        "altitude": 42.0
+    },
+    {
+        "station_id": "WV",
+        "longitude": 1.87485,
+        "latitude": 42.23414,
+        "altitude": 788.0
+    },
+    {
+        "station_id": "WW",
+        "longitude": 1.9368,
+        "latitude": 41.79423,
+        "altitude": 278.0
+    },
+    {
+        "station_id": "WX",
+        "longitude": 0.88175,
+        "latitude": 41.9178,
+        "altitude": 668.0
+    },
+    {
+        "station_id": "WZ",
+        "longitude": 1.63346,
+        "latitude": 41.20187,
+        "altitude": 17.0
+    },
+    {
+        "station_id": "X1",
+        "longitude": 0.81953,
+        "latitude": 41.15374,
+        "altitude": 359.0
+    },
+    {
+        "station_id": "X2",
+        "longitude": 2.18847,
+        "latitude": 41.38943,
+        "altitude": 7.0
+    },
+    {
+        "station_id": "X3",
+        "longitude": 0.5358,
+        "latitude": 41.74281,
+        "altitude": 370.0
+    },
+    {
+        "station_id": "X4",
+        "longitude": 2.16775,
+        "latitude": 41.3839,
+        "altitude": 33.0
+    },
+    {
+        "station_id": "X5",
+        "longitude": 0.31822,
+        "latitude": 40.79705,
+        "altitude": 1055.0
+    },
+    {
+        "station_id": "X6",
+        "longitude": 1.02901,
+        "latitude": 41.92173,
+        "altitude": 366.0
+    },
+    {
+        "station_id": "X7",
+        "longitude": 0.55314,
+        "latitude": 41.51909,
+        "altitude": 215.0
+    },
+    {
+        "station_id": "X8",
+        "longitude": 2.1054,
+        "latitude": 41.37919,
+        "altitude": 79.0
+    },
+    {
+        "station_id": "X9",
+        "longitude": 2.16836,
+        "latitude": 41.61265,
+        "altitude": 176.0
+    },
+    {
+        "station_id": "XA",
+        "longitude": 1.4007,
+        "latitude": 41.60257,
+        "altitude": 785.0
+    },
+    {
+        "station_id": "XB",
+        "longitude": 1.53529,
+        "latitude": 41.4779,
+        "altitude": 584.0
+    },
+    {
+        "station_id": "XC",
+        "longitude": 1.97546,
+        "latitude": 41.47892,
+        "altitude": 147.0
+    },
+    {
+        "station_id": "XD",
+        "longitude": 0.8857,
+        "latitude": 41.32,
+        "altitude": 687.0
+    },
+    {
+        "station_id": "XE",
+        "longitude": 1.201,
+        "latitude": 41.10393,
+        "altitude": 5.0
+    },
+    {
+        "station_id": "XF",
+        "longitude": 2.06952,
+        "latitude": 41.56568,
+        "altitude": 258.0
+    },
+    {
+        "station_id": "XG",
+        "longitude": 2.22619,
+        "latitude": 41.56734,
+        "altitude": 123.0
+    },
+    {
+        "station_id": "XH",
+        "longitude": 1.12993,
+        "latitude": 42.40533,
+        "altitude": 679.0
+    },
+    {
+        "station_id": "XI",
+        "longitude": 0.87182,
+        "latitude": 41.61817,
+        "altitude": 247.0
+    },
+    {
+        "station_id": "XJ",
+        "longitude": 2.80686,
+        "latitude": 41.98223,
+        "altitude": 72.0
+    },
+    {
+        "station_id": "XK",
+        "longitude": 2.43774,
+        "latitude": 41.77362,
+        "altitude": 1668.0
+    },
+    {
+        "station_id": "XL",
+        "longitude": 2.08022,
+        "latitude": 41.34045,
+        "altitude": 8.0
+    },
+    {
+        "station_id": "XM",
+        "longitude": 0.73507,
+        "latitude": 41.59522,
+        "altitude": 235.0
+    },
+    {
+        "station_id": "XN",
+        "longitude": 0.42765,
+        "latitude": 41.46379,
+        "altitude": 89.0
+    },
+    {
+        "station_id": "XO",
+        "longitude": 2.23987,
+        "latitude": 41.93497,
+        "altitude": 499.0
+    },
+    {
+        "station_id": "XP",
+        "longitude": 0.43006,
+        "latitude": 41.06581,
+        "altitude": 349.0
+    },
+    {
+        "station_id": "XQ",
+        "longitude": 0.88814,
+        "latitude": 42.16252,
+        "altitude": 473.0
+    },
+    {
+        "station_id": "XR",
+        "longitude": 0.98161,
+        "latitude": 41.31481,
+        "altitude": 926.0
+    },
+    {
+        "station_id": "XS",
+        "longitude": 2.66446,
+        "latitude": 41.86489,
+        "altitude": 162.0
+    },
+    {
+        "station_id": "XT",
+        "longitude": 1.51165,
+        "latitude": 41.98766,
+        "altitude": 691.0
+    },
+    {
+        "station_id": "XU",
+        "longitude": 1.72195,
+        "latitude": 41.28801,
+        "altitude": 148.0
+    },
+    {
+        "station_id": "XV",
+        "longitude": 2.07956,
+        "latitude": 41.48311,
+        "altitude": 158.0
+    },
+    {
+        "station_id": "XX",
+        "longitude": 1.04476,
+        "latitude": 41.68835,
+        "altitude": 291.0
+    },
+    {
+        "station_id": "XY",
+        "longitude": 0.55027,
+        "latitude": 41.56509,
+        "altitude": 122.0
+    },
+    {
+        "station_id": "XZ",
+        "longitude": 3.06202,
+        "latitude": 42.18139,
+        "altitude": 7.0
+    },
+    {
+        "station_id": "Y4",
+        "longitude": 1.42775,
+        "latitude": 42.17426,
+        "altitude": 1162.0
+    },
+    {
+        "station_id": "Y5",
+        "longitude": 2.86295,
+        "latitude": 42.22793,
+        "altitude": 152.0
+    },
+    {
+        "station_id": "Y6",
+        "longitude": 0.74032,
+        "latitude": 41.04343,
+        "altitude": 317.0
+    },
+    {
+        "station_id": "YA",
+        "longitude": 1.93482,
+        "latitude": 42.44013,
+        "altitude": 1213.0
+    },
+    {
+        "station_id": "YB",
+        "longitude": 2.47097,
+        "latitude": 42.18813,
+        "altitude": 433.0
+    },
+    {
+        "station_id": "YC",
+        "longitude": 0.96802,
+        "latitude": 42.24388,
+        "altitude": 508.0
+    },
+    {
+        "station_id": "YD",
+        "longitude": 0.85617,
+        "latitude": 41.51135,
+        "altitude": 283.0
+    },
+    {
+        "station_id": "YE",
+        "longitude": 1.305756,
+        "latitude": 41.79409,
+        "altitude": 513.0
+    },
+    {
+        "station_id": "YF",
+        "longitude": 0.9345,
+        "latitude": 41.02066,
+        "altitude": 43.0
+    },
+    {
+        "station_id": "YG",
+        "longitude": 1.24244,
+        "latitude": 42.51881,
+        "altitude": 954.0
+    },
+    {
+        "station_id": "YH",
+        "longitude": 1.42403,
+        "latitude": 41.71734,
+        "altitude": 747.0
+    },
+    {
+        "station_id": "YJ",
+        "longitude": 0.64172,
+        "latitude": 41.58462,
+        "altitude": 170.0
+    },
+    {
+        "station_id": "YK",
+        "longitude": 1.99005,
+        "latitude": 41.55361,
+        "altitude": 313.0
+    },
+    {
+        "station_id": "YL",
+        "longitude": 0.96951,
+        "latitude": 41.1227,
+        "altitude": 170.0
+    },
+    {
+        "station_id": "YM",
+        "longitude": 2.29841,
+        "latitude": 41.60922,
+        "altitude": 210.0
+    },
+    {
+        "station_id": "YN",
+        "longitude": 0.80211,
+        "latitude": 42.6966,
+        "altitude": 1027.0
+    },
+    {
+        "station_id": "YO",
+        "longitude": 1.79324,
+        "latitude": 41.43531,
+        "altitude": 155.0
+    },
+    {
+        "station_id": "YP",
+        "longitude": 3.16034,
+        "latitude": 41.90708,
+        "altitude": 36.0
+    },
+    {
+        "station_id": "YQ",
+        "longitude": 2.137,
+        "latitude": 41.31926,
+        "altitude": 7.0
+    },
+    {
+        "station_id": "Z1",
+        "longitude": 0.98486,
+        "latitude": 42.64691,
+        "altitude": 2266.0
+    },
+    {
+        "station_id": "Z2",
+        "longitude": 0.88405,
+        "latitude": 42.46602,
+        "altitude": 2535.0
+    },
+    {
+        "station_id": "Z3",
+        "longitude": 1.7785,
+        "latitude": 42.46605,
+        "altitude": 2230.0
+    },
+    {
+        "station_id": "Z5",
+        "longitude": 1.27201,
+        "latitude": 42.70029,
+        "altitude": 2400.0
+    },
+    {
+        "station_id": "Z6",
+        "longitude": 0.73198,
+        "latitude": 42.77011,
+        "altitude": 2228.0
+    },
+    {
+        "station_id": "Z7",
+        "longitude": 1.05476,
+        "latitude": 42.53412,
+        "altitude": 2519.0
+    },
+    {
+        "station_id": "Z9",
+        "longitude": 1.71498,
+        "latitude": 42.29265,
+        "altitude": 2143.0
+    },
+    {
+        "station_id": "ZB",
+        "longitude": 1.36597,
+        "latitude": 42.51939,
+        "altitude": 2451.0
+    },
+    {
+        "station_id": "ZC",
+        "longitude": 2.24565,
+        "latitude": 42.42117,
+        "altitude": 2410.0
+    },
+    {
+        "station_id": "ZD",
+        "longitude": 1.89716,
+        "latitude": 42.32211,
+        "altitude": 2478.0
+    }
+]

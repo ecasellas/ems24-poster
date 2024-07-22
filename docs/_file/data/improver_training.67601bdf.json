@@ -1,0 +1,10 @@
+[
+    {"category": "Day 1", "type": "Training", "value": -45},
+    {"category": "Day 1", "type": "Forecast", "value": 3},
+    {"category": "Day 2", "type": "Training", "value": -44},
+    {"category": "Day 2", "type": "Training", "value": 1},
+    {"category": "Day 2", "type": "Forecast", "value": 3},
+    {"category": "Day 3", "type": "Training", "value": -43},
+    {"category": "Day 3", "type": "Training", "value": 2},
+    {"category": "Day 3", "type": "Forecast", "value": 3}
+]
