@@ -9,7 +9,7 @@ toc: false
   flex-direction: column;
   align-items: center;
   font-family: var(--sans-serif);
-  margin: 4rem 0 8rem;
+  margin: 4rem 0rem 4rem;
   text-wrap: balance;
   text-align: center;
 }
@@ -17,7 +17,7 @@ toc: false
 .hero h1 {
   margin: 2rem 0;
   max-width: none;
-  font-size: 14vw;
+  font-size: 12vw;
   font-weight: 900;
   line-height: 1.1;
   background: linear-gradient(30deg, var(--theme-foreground-focus), currentColor);
@@ -46,7 +46,7 @@ toc: false
   .responsive-container {
     position: relative;
     width: 100%;
-    height: 70%;
+    height: 73%;
     margin-bottom: 10px;
   }
   .responsive-plot {
@@ -72,21 +72,18 @@ toc: false
 
 <div class="hero">
   <h1>Postprocessing multi-model ensemble temperature forecasts using Distributional Regression Networks</h1>
-  <h2>Enric Casellas Masana, Josep Ramon Miró Cubells, and Jordi Moré Pratdesaba</h2>
-  <h2>
-    Welcome to our EMS poster! This work presents a comparative analysis of postprocessing techniques for 
-    multi-model weather ensemble forecasts (Poor Man's Ensemble). We explore the application of Ensemble Model
-    Output Statistics (EMOS) using the IMPROVER framework and also a Distributional Regression Network (DRN) approach.
-  </h2>
+  <h3>Enric Casellas Masana, Josep Ramon Miró Cubells, and Jordi Moré Pratdesaba</h3>
 </div>
 
 <div class="grid grid-cols-3">
-  <div class="card">
+  <div class="card" style="display: flex; flex-direction: column; flex: 1; justify-content: space-between;">
     <h1>Introduction</h1>
+    <p>This work presents a comparative analysis of postprocessing techniques for multi-model weather ensemble forecasts (Poor Man's Ensemble).</p>
+    <p>We explore the application of Ensemble Model Output Statistics (EMOS) using the IMPROVER framework and also two Distributional Regression Network (DRN) approaches to postprocess hourly temperature forecasts.</p>
     <a href="introduction"><span>Go to Introduction &#8599;</span></a>
   </div>
 
-  <div class="card">
+  <div class="card" style="display: flex; flex-direction: column; flex: 1; justify-content: space-between;">
     <h1>Study zone</h1>
   <div class="responsive-container">
     <div class="responsive-plot">
@@ -98,7 +95,7 @@ toc: false
     <a href="study_zone"><span>Go to Study Zone &#8599;</span></a>
   </div>
 
-  <div class="card">
+  <div class="card" style="display: flex; flex-direction: column; flex: 1; justify-content: space-between;">
     <h1>Data</h1>
 
 <span style="font-size: 30px; font-weight: 900;">27</span> months of air temperature hourly data
@@ -118,22 +115,22 @@ toc: false
   <div class="card">
     <h1>Methodologies</h1>
     <div class="card">
-      <div style="display: flex; padding: 0px;">
-       <img src="data/improver_logo_small.webp" style="width: 50%; height: 50%; margin-right: 15px;"></img>
-       <p>Ensemble Model Output Statistics, also known as EMOS, implemented using IMPROVER developed by the MetOffice.</p>
+      <div style="display: flex; padding: 0px; align-items: center;">
+       <img src="data/improver_logo_small.png" style="width: 20%; height: 20%; margin-right: 15px;"></img>
+       <p>Ensemble Model Output Statistics (<a href="methodologies/#ensemble-model-output-statistics">EMOS</a>), implemented using <a href="https://improver.readthedocs.io/en/latest/index.html">IMPROVER</a> developed by the Met Office, is used with ensemble members.</p>
       </div>
     </div>
     <div class="card">
-      <div style="display: flex; padding: 0px;">
-       <img src="data/improver_logo_small.webp" style="width: 50%; height: 50%; margin-right: 15px;"></img>
-       <p>Ensemble Model Output Statistics, also known as EMOS, implemented using IMPROVER developed by the MetOffice.</p>
+      <div style="display: flex; padding: 0px; align-items: center;">
+       <img src="data/nn3.png" style="width: 20%; height: 20%; margin-right: 15px;"></img>
+       <p>Distributional Regression Networks (<a href="methodologies/#distributional-regression-neural-networks">DRN</a>), based on Rasp and Lerch (2018), are implemented using <a href="https://www.tensorflow.org/">TensorFlow</a>. Either the mean and standard deviation of the ensemble or its individual members are utilized in the implementation.</p>
       </div>
     </div>   
   <a href="methodologies"><span>Go to Methodologies &#8599;</span></a>  
   </div>
   
 
-  <div class="card grid-rowspan-2 grid-colspan-2">
+  <div class="card grid-rowspan-2 grid-colspan-2" style="display: flex; flex-direction: column; flex: 1; justify-content: space-between;">
   
   <h1>Results</h1>
     <div class="card">
@@ -142,14 +139,17 @@ toc: false
     </div>
     <div class="card">
     ${resize((width) => rankHistAll(ranks, {width}))}
-    <a href="results"><span>Go to Results &#8599;</span></a>
     </div>
-  
+  <a href="results"><span>Go to Results &#8599;</span></a>
   </div>
 
-  <div class="card">
+  <div class="card" style="display: flex; flex-direction: column; flex: 1; justify-content: space-between;">
     <h1>Conclusions</h1>
-    <a href="conclusions"><span>Go to Conclusions &#8599;</span></a>
+    <div class="card">Any postprocessing method improves upon the raw PME forecast.</div>
+    <div class="card">DRN-Members, which uses PME members as input features, achieves the lowest mean CRPS and the flattest rank histogram for 0-48 hours</div>
+    <div class="card">IMPROVER performs better than DRN-Mean in CRPS but has poorer rank histograms. DRN-Mean shows a slight positive bias, while IMPROVER displays some underdispersion.</div>
+
+  <a href="conclusions"><span>Go to Conclusions &#8599;</span></a>
   </div>
 
 </div>
@@ -253,30 +253,13 @@ return Plot.plot({
 ```
 
 
-## Next steps
-
-Here are some ideas of things you could try…
+## Acknowledgements
 
 <div class="grid grid-cols-4">
-  <div class="card">
-    Chart your own data using <a href="https://observablehq.com/framework/lib/plot"><code>Plot</code></a> and <a href="https://observablehq.com/framework/files"><code>FileAttachment</code></a>. Make it responsive using <a href="https://observablehq.com/framework/display#responsive-display"><code>resize</code></a>.
+  <div class="card" style="text-align: center;">
+    <img src="data/meteocat_c_blanc.png" style="width: 60%;"></img>
   </div>
-  <div class="card">
-    Create a <a href="https://observablehq.com/framework/project-structure">new page</a> by adding a Markdown file (<code>whatever.md</code>) to the <code>src</code> folder.
-  </div>
-  <div class="card">
-    Add a drop-down menu using <a href="https://observablehq.com/framework/inputs/select"><code>Inputs.select</code></a> and use it to filter the data shown in a chart.
-  </div>
-  <div class="card">
-    Write a <a href="https://observablehq.com/framework/loaders">data loader</a> that queries a local database or API, generating a data snapshot on build.
-  </div>
-  <div class="card">
-    Import a <a href="https://observablehq.com/framework/imports">recommended library</a> from npm, such as <a href="https://observablehq.com/framework/lib/leaflet">Leaflet</a>, <a href="https://observablehq.com/framework/lib/dot">GraphViz</a>, <a href="https://observablehq.com/framework/lib/tex">TeX</a>, or <a href="https://observablehq.com/framework/lib/duckdb">DuckDB</a>.
-  </div>
-  <div class="card">
-    Ask for help, or share your work or ideas, on the <a href="https://talk.observablehq.com/">Observable forum</a>.
-  </div>
-  <div class="card">
-    Visit <a href="https://github.com/observablehq/framework">Framework on GitHub</a> and give us a star. Or file an issue if you’ve found a bug!
+  <div class="card" style="display: grid; place-items: center;">
+    <img src="data/accioclimatica_blanc_h3.png" style="max-width: 100%; max-height: 100%;"></img>
   </div>
 </div>
