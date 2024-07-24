@@ -1,7 +1,7 @@
 [
   {"model": "WRF-ECM", "spatial_resolution": 3, "temporal_resolution": 1, "lead_times": 72},
   {"model": "WRF-GFS-3", "spatial_resolution": 3, "temporal_resolution": 1, "lead_times": 72},
-  {"model": "WRF-GFS-9", "spatial_resolution": 3, "temporal_resolution": 1, "lead_times": 72},
+  {"model": "WRF-GFS-9", "spatial_resolution": 9, "temporal_resolution": 1, "lead_times": 72},
   {"model": "AROME", "spatial_resolution": 1.1, "temporal_resolution": 1, "lead_times": 48},
   {"model": "ARPEGE", "spatial_resolution": 10, "temporal_resolution": 1, "lead_times": 72},
   {"model": "ICON", "spatial_resolution": 7, "temporal_resolution": 1, "lead_times": 72},
