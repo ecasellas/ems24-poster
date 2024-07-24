@@ -66,7 +66,7 @@ const selectedMap = Generators.input(selMap);
 
 
 ```js
-const circle = d3.geoCircle().center([1.80, 41.8]).radius(1.2).precision(1)()
+const circle = d3.geoCircle().center([1.71, 41.8]).radius(1.3).precision(1)()
 ```
 
 ```js
