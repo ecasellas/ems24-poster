@@ -77,8 +77,10 @@ ${tex.block`
     `}
 
 where the location parameter ${tex`\mu`} is the weighted mean of the ensemble forecasts
-(with weights ${tex`b_i`}). Parameters ${tex`a`}, ${tex`b_i`}, ${tex`c`} and ${tex`d`} are determined
-using the training data and by minimising the Continuous Ranked Probability Score (CRPS).
+(with members of the ensemble as ${tex`X_i`} and weights as ${tex`b_i`}). The scale parameter is
+represented by the ensemble variance ${tex`S^{2}`}. Parameters ${tex`a`}, ${tex`b_i`}, ${tex`c`}
+and ${tex`d`} are determined using the training data and by minimising the Continuous Ranked
+Probability Score (CRPS).
 
 To obtain a calibrated forecast, the parameters can be used to determine the location and scale parameter
 of the normal distribution. More information can be found at
