@@ -45,8 +45,9 @@ with the lowest CRPS, closely followed by DRN-Mean.
 |-----------------|-----------|
 | PME             | 1.082     |
 | IMPROVER        | 0.789     |
+| DRN-Mean        | 0.839     |
 | **DRN-Members** | **0.768** |
-| DRN-Mean        | 0.776     |
+
 
 The CRPS is also analysed from two perspectives:
 
